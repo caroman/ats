@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if success %}
+    <h1>Thanks</h1>
+    <br/>
+    <h2>You have applied to offer <a href="/jobs//job/{{ job }}/detail/">{{ job }}</a></h2>
+{% else %}
+    <h2>Sorry</h2>
+    <br/>
+    A problem occur while processing application for job <a href="/jobs/job/{{ job }}/detail/">{{ job }}</a>
+    </br> Please try again later.
+{% endif %}
+{% endblock %}
+
+

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contentmiddle">
+<table>
+    <caption><h1>{{ mandate.fields.title }}</h1></caption>
+    <thead><tr>
+        <th scope="col" style="width:30%" > </th>
+        <th scope="col" style="width:70%" > </th>
+    </tr></thead>
+    <tbody><tr>
+        <tr><td> Code</td><td> {{ mandate.fields.posting_number }} </td></tr>
+        <tr><td> Requirement </td><td> {{ mandate.fields.requirement|safe }} </td></tr>
+        <tr><td> Responsability </td><td> {{ mandate.fields.responsability|safe }} </td></tr>
+    <tr></tbody>
+<tr><td colspan=2>
+{% if not mandate.extras.get_user_apply  %}
+<div class="form" > 
+    <form action="/jobs/job/{{ mandate.pk }}/apply/" 
+          method="POST">
+        {% csrf_token %}
+        <div class="field">
+            <input type="submit" value="Apply" />     
+        </div>
+    </form>
+</div>
+{% else %}
+<p><h1>Already applied.</h1></p>   
+{% endif %}
+</td></tr>
+</tbody></table>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contentmiddle">
+<form method="post" action="/jobs/login/?next=/jobs/accounts/profile/" 
+    style="width: 50%; margin-right: auto; margin-left: auto;">
+    {% if form.errors %}
+        <p style="color:red;width:100%">Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    {% csrf_token %}
+    <table>
+    <caption>Sign in with your account</caption>
+    <thead><tr>
+    <th scope="col">User</th>
+    <th scope="col">Password</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+        <td><input type="text" name="username" id="id_username" /></td>
+        <td><input type="password" name="password" id="id_password" /></td>
+    </tr>
+    </tbody>
+    <tfoot><tr>
+    <td colspan="2"> <input type="submit" value="Sign in" class="submit" style="width:20%;margin-left:40%"/> </td>
+    <input type="hidden" name="next" value="{{ next }}" />
+    </tr></tfoot>
+    </table>
+</form>
+
+<p>Forgot password ? <a href="{% url auth_password_reset %}">Reset it</a>!</p>
+<p>Not member ? <a href="{% url registration_register %}">Register</a>!</p>
+</div>
+
+{% endblock %}
+
+
+

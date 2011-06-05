@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.status",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Status 1"
+    }
+  },
+  {
+    "model": "main.status",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Status 2"
+    }
+  }
+]
+

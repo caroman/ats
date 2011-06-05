@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+ <div class="contentmiddle">
+ <form method="POST" action="/jobs/user/file/cv/" enctype="multipart/form-data">
+ {% csrf_token %}
+ <table>
+    <caption>Resume (doc or pdf)</caption>
+    <tbody>
+    <tr>
+        <td> 
+            <input type="file" name="file" size="80%;"/>
+            <input type="submit" value="Upload"/>
+        </td>
+    </tr>
+    </tbody>
+ </table>
+ </form>
+ </div>
+
+ <div class="contentmiddle">
+ <form method="POST" action="/jobs/user/file/new/" enctype="multipart/form-data">
+ {% csrf_token %}
+ <table>
+    <caption>Other Files</caption>
+    <tbody>
+    <tr>
+        <td> 
+            <input type="file" name="file" size="80%;"/>
+            <input type="submit" value="Upload"/>
+        </td>
+    </tr>
+    </tbody>
+ </table>
+ </form>
+ </div>
+
+ <div class="contentmiddle">
+ <table>
+    <caption></caption>
+    <thead><tr> 
+        {# <th scope="col" > Id </th> #}
+        <th scope="col" style="width:70%"> File </th>
+        <th scope="col" style="width:20%"> Date Posted </th>
+        <th scope="col" style="width:10%"> </th>
+    <tr></thead>
+    <tfoot><tr>
+        <th scope="row" style="text-align:left;">Total {{ files.total }}</th>
+        <td colspan="2"></td>
+    </tr></tfoot>
+    <tbody>
+    {% for file in files.results %}
+        <tr>
+            {# <th scope="row"> {{ mandate.fields.posting_number }} </th> #}
+            <td > <a href="/jobs/data/user/get/{{ file.extras.download_name }}">{{ file.fields.title }}</a> </td>
+            <td > {{ file.fields.created_time }} </td>
+            <td > <a href="/jobs/data/user/del/{{ file.extras.download_name }}">Delete</a> </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+ </table>
+ </div>
+
+{% endblock %}

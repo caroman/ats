@@ -1,0 +1,144 @@
+html, body {
+        font:normal 12px verdana;
+        margin:0;
+        padding:0;
+        border:0 none;
+        overflow:hidden;
+        height:100%;
+}
+p {
+    margin:5px;
+}
+
+#northtitle {
+ font-family:helvetica;
+ font-size:35px;
+ color:#08088a;
+ position:relative;
+ top: -50px;
+ left: 400px;
+}
+
+.img_logout { 
+     background-image:url("img/logout.png") !important; 
+} 
+.img_add_candidate { 
+     background-image:url("img/add_candidate_24.png") !important; 
+} 
+.img_add_mandate { 
+     background-image:url("img/add_mandate_24.png") !important; 
+} 
+.img_add_event { 
+     background-image:url("img/add_event_24.png") !important; 
+} 
+.img_list_candidates { 
+     background-image:url("img/list_candidates_24.png") !important; 
+} 
+.img_list_mandates { 
+     background-image:url("img/list_mandates_24.png") !important; 
+} 
+.img_list_events { 
+     background-image:url("img/list_events_24.png") !important; 
+} 
+.img_add { 
+     background-image:url("img/add.png") !important; 
+} 
+.img_delete { 
+     background-image:url("img/delete.gif") !important; 
+} 
+.img_file { 
+     background-image:url("img/file.png") !important; 
+} 
+.img_edit_small { 
+     background-image:url("img/edit_16.png") !important; 
+} 
+.img_edit_medium { 
+     background-image:url("img/edit_24.png") !important; 
+} 
+.img_edit_large { 
+     background-image:url("img/edit_32.png") !important; 
+} 
+
+
+
+
+
+
+
+
+/* Preview classes */
+.preview {
+    background:#fff;
+    color:#222;
+    font:normal 12px tahoma,verdana,arial,sans-serif;
+}
+
+.preview p {
+    line-height:18px;
+    margin:8px 0;
+}
+
+.preview ul {
+    margin-left:18px;
+}
+
+.preview ul li {
+    display:list-item;
+    list-style-image:none !important;
+    list-style-position:outside !important;
+    list-style-type:disc !important;
+    margin-left:18px;
+}
+
+.preview pre, #preview code {
+    background:#f1f1f1;
+    display:block;
+}
+
+.preview h4.info-header {
+    font-weight:normal;
+    color:#555;
+    font-size:11px;
+}
+.preview span.info-date {
+    font-weight:normal;
+    color:#555;
+    float:right;
+    font-size:11px;
+}
+.preview div.info-data {
+    background: none repeat scroll 0 0 #F1F2F4;
+    padding:5px;
+    border-bottom:1px solid #dadadb;
+}
+.preview div.info-body {
+    padding:10px;
+}
+
+/* Grid Row Classes */
+.mac-future-row {
+    background-color:lightGreen;
+}
+.mac-present-row {
+    background-color:lightYellow;
+}
+.mac-past-row {
+    background-color:lightCoral;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

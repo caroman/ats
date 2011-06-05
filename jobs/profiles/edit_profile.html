@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contentmiddle">
+  <form action="" method="POST" style="width: 50%; margin-right: auto; margin-left: auto;">
+    {% csrf_token %}
+    <table>
+    <caption>Profile</caption>
+    <thead><tr>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    </tr></thead>
+    <tbody>
+    {% for field in form %}
+    <tr>
+        <td><font color="red">{{ field.errors }}</font></br>{{ field.label_tag }}</td>
+        <td>{{ field }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>   
+    <tfoot><tr>
+    <td colspan="2"> <input type="submit" value="Save" class="submit" style="width:20%;margin-left:40%"/> </td>
+    <input type="hidden" name="next" value="/jobs/{{ next }}" />
+    </tr></tfoot>
+    </table>    
+  </form>
+<p>
+    <a href="{% url auth_password_change %}">Change password</a>
+</p>
+</div>
+{% endblock %}  

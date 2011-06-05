@@ -1,0 +1,337 @@
+{
+    projectName: 'ATS JS',
+    deployDir: 'ats',
+    licenseText: "ATS JS 0.3\nCopyright(c) 2010 Init5",
+    pkgs: 
+    [{
+        name: 'ATS Base',
+        file: 'pkg/ats-base.js',
+        isDebug: true,
+        fileIncludes: [{
+            text: 'ATS.ui.js',
+            path: ''
+        },{
+            text: 'ATS.js',
+            path: ''
+        },{
+            text: 'Override.js',
+            path: ''
+        },{
+            text: 'SearchField.js',
+            path: ''
+        },{
+            text: 'FileUploadField.js',
+            path: ''
+        },{
+            text: 'SuperBoxSelect.js',
+            path: ''
+        },{
+            text: 'Examples.js',
+            path: ''
+        }]
+      },{
+        name: 'WebTop',
+        file: 'pkg/ats-webtop.js',
+        isDebug: true,
+        fileIncludes: [ {
+            text: 'WebTopClass.ui.js',
+            path: ''
+         },{
+            text: 'WebTopClass.js',
+            path: ''
+         }]
+      },{
+        name: 'Candidate',
+        file: 'pkg/ats-candidate.js',
+        isDebug: true,
+        fileIncludes: [ {
+            text: 'CandidateClass.ui.js',
+            path: ''
+         },{
+            text: 'CandidateClass.js',
+            path: ''
+         },{
+            text: 'CandidatePersonalEditForm.ui.js',
+            path: ''
+         },{
+            text: 'CandidatePersonalEditForm.js',
+            path: ''
+         },{
+            text: 'CandidateExperienceEditForm.ui.js',
+            path: ''
+         },{
+            text: 'CandidateExperienceEditForm.js',
+            path: ''
+         },{
+            text: 'CandidateGrid.ui.js',
+            path: ''
+         },{
+            text: 'CandidateGrid.js',
+            path: ''
+         },{
+            text: 'CandidateNewWindow.ui.js',
+            path: ''
+         },{
+            text: 'CandidateNewWindow.js',
+            path: ''
+         },{
+            text: 'CandidateComboBox.ui.js',
+            path: ''
+         },{
+            text: 'CandidateComboBox.js',
+            path: ''
+         },{
+            text: 'CandidateFileNewWindow.ui.js',
+            path: ''
+         },{
+            text: 'CandidateFileNewWindow.js',
+            path: ''
+         },{
+            text: 'CandidateFileGrid.ui.js',
+            path: ''
+         },{
+            text: 'CandidateFileGrid.js',
+            path: ''
+         },{
+            text: 'CandidateMACGrid.ui.js',
+            path: ''
+         },{
+            text: 'CandidateMACGrid.js',
+            path: ''
+         },{
+            text: 'CandidateMACGridView.ui.js',
+            path: ''
+         },{
+            text: 'CandidateMACGridView.js',
+            path: ''
+         }]
+      },{
+        name: 'Mandate',
+        file: 'pkg/ats-mandate.js',
+        isDebug: true,
+        fileIncludes: [ {
+            text: 'MandateClass.ui.js',
+            path: ''
+         },{
+            text: 'MandateClass.js',
+            path: ''
+         },{
+            text: 'MandateEditForm.ui.js',
+            path: ''
+         },{
+            text: 'MandateEditForm.js',
+            path: ''
+         },{
+            text: 'MandateEditDescResponsabilityForm.ui.js',
+            path: ''
+         },{
+            text: 'MandateEditDescResponsabilityForm.js',
+            path: ''
+         },{
+            text: 'MandateEditDescRequirementForm.ui.js',
+            path: ''
+         },{
+            text: 'MandateEditDescRequirementForm.js',
+            path: ''
+         },{
+            text: 'MandateClosingForm.ui.js',
+            path: ''
+         },{
+            text: 'MandateClosingForm.js',
+            path: ''
+         },{
+            text: 'MandateGrid.ui.js',
+            path: ''
+         },{
+            text: 'MandateGrid.js',
+            path: ''
+         },{
+            text: 'MandateMACGrid.ui.js',
+            path: ''
+         },{
+            text: 'MandateMACGrid.js',
+            path: ''
+         },{
+            text: 'MandateMACGridView.ui.js',
+            path: ''
+         },{
+            text: 'MandateMACGridView.js',
+            path: ''
+         },{
+            text: 'MandateNewWindow.ui.js',
+            path: ''
+         },{
+            text: 'MandateNewWindow.js',
+            path: ''
+         },{
+            text: 'MandateGridView.ui.js',
+            path: ''
+         },{
+            text: 'MandateGridView.js',
+            path: ''
+         },{
+            text: 'MandateComboBox.ui.js',
+            path: ''
+         },{
+            text: 'MandateComboBox.js',
+            path: ''
+          } ]
+      },{
+        name: 'MAC',
+        file: 'pkg/ats-mac.js',
+        isDebug: true,
+        fileIncludes: [ {
+            text: 'MACClass.ui.js',
+            path: ''
+         },{
+            text: 'MACClass.js',
+            path: ''
+         },{
+            text: 'MACEditForm.ui.js',
+            path: ''
+         },{
+            text: 'MACEditForm.js',
+            path: ''
+         },{
+            text: 'MACGrid.ui.js',
+            path: ''
+         },{
+            text: 'MACGrid.js',
+            path: ''
+         },{
+            text: 'MACNewWindow.ui.js',
+            path: ''
+         },{
+            text: 'MACNewWindow.js',
+            path: ''
+         },{
+            text: 'MACEditWindow.ui.js',
+            path: ''
+         },{
+            text: 'MACEditWindow.js',
+            path: ''
+         },{
+            text: 'MACGridView.ui.js',
+            path: ''
+         },{
+            text: 'MACGridView.js',
+            path: ''
+          },{
+            text: 'MACFilterPanel.ui.js',
+            path: ''
+         },{
+            text: 'MACFilterPanel.js',
+            path: ''
+         },{
+            text: 'MainTabPanel.ui.js',
+            path: ''
+         },{
+            text: 'MainTabPanel.js',
+            path: ''
+        }]
+      },{
+        name: 'Store',
+        file: 'pkg/ats-store.js',
+        isDebug: true,
+        fileIncludes: [ {
+            text: 'ActivitiesStore.js',
+            path: ''
+        },{
+            text: 'MACStatusStore.js',
+            path: ''
+        },{
+            text: 'MandateStatusStore.js',
+            path: ''
+        },{
+            text: 'HiringManagerStore.js',
+            path: ''
+        },{
+            text: 'CandidateStore.js',
+            path: ''
+        },{
+            text: 'CandidateComboBoxStore.js',
+            path: ''
+        },{
+            text: 'CandidateMACsStore.js',
+            path: ''
+        },{
+            text: 'CandidateFileStore.js',
+            path: ''
+        },{
+            text: 'MandateStore.js',
+            path: ''
+        },{
+            text: 'MandateCandidatesStore.js',
+            path: ''
+        },{
+            text: 'MandateComboBoxStore.js',
+            path: ''
+        },{
+            text: 'MandateMACsStore.js',
+            path: ''
+        },{
+            text: 'MACStore.js',
+            path: ''
+        },{
+            text: 'ProfessionalDesignationStore.js',
+            path: ''
+        },{
+            text: 'WorkTypeStore.js',
+            path: ''
+        },{
+            text: 'WorkLocationStore.js',
+            path: ''
+        },{
+            text: 'ManagmentExperienceStore.js',
+            path: ''
+        },{
+            text: 'StoreReplaceConvert.js',
+            path: ''
+        }]
+      },{
+        name: 'ATS JS',
+        file: 'ats-all.js',
+        isDebug: true,
+        includeDeps: true,
+        pkgDeps: [
+                   'pkg/ats-base.js'
+                  ,'pkg/ats-webtop.js'
+                  ,'pkg/ats-candidate.js'
+                  ,'pkg/ats-mandate.js'
+                  ,'pkg/ats-mac.js'
+                  ,'pkg/ats-store.js'
+                 ],
+        fileIncludes: [  ]
+    },{
+       name: 'ATS CSS',
+       file: 'ats-all.css',
+       fileIncludes: [{
+           text: 'main.css',
+           path: 'css/main/'
+       },{
+           text: 'fileuploadfield.css',
+           path: 'css/main/ux/'
+       },{
+           text: 'superboxselect.css',
+           path: 'css/main/ux/'
+       },{
+           text: 'examples.css',
+           path: 'css/main/ux/'
+       }]
+    }],    
+    resources: 
+    [{
+        src: 'img/',
+        dest: 'img/',
+        filters: ".*[\\.png|\\.gif]"
+    },{
+        src: 'img/main/ux/',
+        dest: 'img/main/ux/',
+        filters: ".*[\\.png|\\.gif]"
+    },{
+        src: 'css/',
+        dest: 'css/',
+        filters: ".*"
+    }]    
+}
+

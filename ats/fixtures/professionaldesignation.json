@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.professionaldesignation",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Professional designation 1"
+    }
+  },
+  {
+    "model": "main.professionaldesignation",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Professional designation 2"
+    }
+  }
+]
+

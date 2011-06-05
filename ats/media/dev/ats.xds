@@ -1,0 +1,6273 @@
+{
+	"name": "ats.xds",
+	"projectId": "C8A52E74-8FBF-4920-91A8-A27C59A9D240",
+	"settings": {
+		"urlPrefix": "http://localhost/",
+		"spacesToIndent": 4,
+		"codeGenFormat": "Class",
+		"extPath": "http://extjs.cachefly.net/ext-3.2.1/",
+		"exportPath": ".",
+		"lineEnding": "LF"
+	},
+	"xdsVersion": "xds-1.0.2.14",
+	"components": [
+		{
+			"id": "MyViewport",
+			"cid": "viewport",
+			"jsClass": "ATS",
+			"snapToGrid": 10,
+			"userConfig": {
+				"layout": "border",
+				"autoShow": "-ext-undefined-",
+				"hideBorders": "-ext-undefined-",
+				"id": "ATSViewport"
+			},
+			"cn": [
+				{
+					"id": "MyPanel22",
+					"cid": "panel",
+					"jsClass": "MyPanel22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "north",
+						"width": 100
+					},
+					"cn": [
+						{
+							"id": "MyToolbar14",
+							"cid": "toolbar",
+							"jsClass": "MyToolbar14",
+							"dock": "tbar",
+							"snapToGrid": 10,
+							"cn": [
+								{
+									"id": "MyDisplayField20",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField20",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "Applicant Tracking System",
+										"submitValue": false
+									}
+								},
+								{
+									"id": "MyFill2",
+									"cid": "tbfill",
+									"jsClass": "MyFill2",
+									"snapToGrid": 10
+								},
+								{
+									"id": "MyButton27",
+									"cid": "button",
+									"jsClass": "MyButton27",
+									"snapToGrid": 10,
+									"userConfig": {
+										"text": "Logout",
+										"autoRef": "logoutButton",
+										"height": 50,
+										"iconAlign": "-ext-undefined-",
+										"width": 100,
+										"scale": "large",
+										"iconCls": "img_logout"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyPanel1",
+					"cid": "panel",
+					"jsClass": "MyPanel1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "center",
+						"layout": "border",
+						"border": false,
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyUserComponent13",
+							"cid": "usercomponent",
+							"jsClass": "MainTabPanel",
+							"snapToGrid": 10,
+							"userConfig": {
+								"jsClass": "MainTabPanel",
+								"userXType": "maintabpanel",
+								"region": "center"
+							},
+							"userComponent": "MyTabPanel"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyPanel3",
+			"cid": "panel",
+			"jsClass": "CandidateClass",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "Candidates",
+				"width": 576,
+				"layout": "border",
+				"hideBorders": true
+			},
+			"userXType": "candidateclass",
+			"cn": [
+				{
+					"id": "MyPanel9",
+					"cid": "panel",
+					"jsClass": "MyPanel9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "center",
+						"layout": "border",
+						"frame": "-ext-undefined-",
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyUserComponent1",
+							"cid": "usercomponent",
+							"jsClass": "CandidateGrid",
+							"snapToGrid": 10,
+							"userConfig": {
+								"jsClass": "CandidateGrid",
+								"userXType": "candidategrid",
+								"autoRef": "grid",
+								"region": "center"
+							},
+							"userComponent": "MyGrid1"
+						},
+						{
+							"id": "MyPanel5",
+							"cid": "panel",
+							"jsClass": "MyPanel5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"region": "south",
+								"width": 250,
+								"collapsed": "-ext-undefined-",
+								"collapsible": true,
+								"draggable": "-ext-undefined-",
+								"floating": "-ext-undefined-",
+								"floatable": false,
+								"split": true,
+								"titleCollapse": true,
+								"layout": "fit",
+								"hideBorders": true,
+								"border": false,
+								"collapseFirst": "-ext-undefined-",
+								"height": 250
+							},
+							"cn": [
+								{
+									"id": "MyTabPanel1",
+									"cid": "tabpanel",
+									"jsClass": "MyTabPanel1",
+									"snapToGrid": 10,
+									"userConfig": {
+										"activeTab": 0,
+										"autoHeight": "-ext-undefined-",
+										"border": false,
+										"hideBorders": true,
+										"deferredRender": false
+									},
+									"cn": [
+										{
+											"id": "MyPanel7",
+											"cid": "panel",
+											"jsClass": "MyPanel7",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Events",
+												"layout": "fit",
+												"hideBorders": true,
+												"border": false,
+												"autoScroll": true
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent19",
+													"cid": "usercomponent",
+													"jsClass": "CandidateMACGrid",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "CandidateMACGrid",
+														"userXType": "candidatemacgrid",
+														"autoRef": "macgrid"
+													},
+													"userComponent": "MyGrid4"
+												}
+											]
+										},
+										{
+											"id": "MyPanel4",
+											"cid": "panel",
+											"jsClass": "MyPanel4",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Candidate",
+												"autoRef": "-ext-undefined-",
+												"layout": "fit",
+												"frame": true,
+												"autoScroll": true,
+												"hideBorders": true,
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent14",
+													"cid": "usercomponent",
+													"jsClass": "CandidatePersonalEditForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "CandidatePersonalEditForm",
+														"userXType": "candidatepersonaleditform",
+														"autoRef": "personaleditform"
+													},
+													"userComponent": "MyForm"
+												}
+											]
+										},
+										{
+											"id": "MyPanel25",
+											"cid": "panel",
+											"jsClass": "MyPanel4",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Experience",
+												"autoRef": "-ext-undefined-",
+												"layout": "fit",
+												"frame": true,
+												"autoScroll": true,
+												"hideBorders": true,
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent15",
+													"cid": "usercomponent",
+													"jsClass": "CandidateExperienceEditForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "CandidateExperienceEditForm",
+														"userXType": "candidateexperienceeditform",
+														"autoRef": "experienceeditform"
+													},
+													"userComponent": "MyForm8"
+												}
+											]
+										},
+										{
+											"id": "MyPanel",
+											"cid": "panel",
+											"jsClass": "MyPanel",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Files",
+												"autoHeight": "-ext-undefined-",
+												"autoScroll": true,
+												"layout": "fit"
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent18",
+													"cid": "usercomponent",
+													"jsClass": "CandidateFileGrid",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "CandidateFileGrid",
+														"userXType": "candidatefilegrid",
+														"autoRef": "candidatefilegrid"
+													},
+													"userComponent": "MyGrid6"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyPanel8",
+					"cid": "panel",
+					"jsClass": "MyPanel8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"width": 400,
+						"height": 250,
+						"region": "east",
+						"autoRef": "infopanel",
+						"tpl": "",
+						"collapsible": true,
+						"split": true,
+						"padding": "-ext-undefined-",
+						"hideBorders": true,
+						"border": false,
+						"collapsed": "-ext-undefined-",
+						"autoHeight": "-ext-undefined-",
+						"autoScroll": true
+					}
+				}
+			]
+		},
+		{
+			"id": "MyPanel10",
+			"cid": "panel",
+			"jsClass": "MandateClass",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "Mandates",
+				"width": 576,
+				"layout": "border",
+				"hideBorders": true
+			},
+			"userXType": "mandateclass",
+			"cn": [
+				{
+					"id": "MyPanel11",
+					"cid": "panel",
+					"jsClass": "MyPanel9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "center",
+						"layout": "border",
+						"frame": "-ext-undefined-",
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyUserComponent5",
+							"cid": "usercomponent",
+							"jsClass": "MandateGrid",
+							"snapToGrid": 10,
+							"userConfig": {
+								"jsClass": "MandateGrid",
+								"userXType": "mandategrid",
+								"region": "center",
+								"autoRef": "grid"
+							},
+							"userComponent": "MyGrid"
+						},
+						{
+							"id": "MyPanel13",
+							"cid": "panel",
+							"jsClass": "MyPanel5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"region": "south",
+								"width": 250,
+								"collapsed": "-ext-undefined-",
+								"collapsible": true,
+								"draggable": "-ext-undefined-",
+								"floating": "-ext-undefined-",
+								"floatable": false,
+								"split": true,
+								"titleCollapse": true,
+								"layout": "fit",
+								"hideBorders": true,
+								"border": false,
+								"height": 250
+							},
+							"cn": [
+								{
+									"id": "MyTabPanel2",
+									"cid": "tabpanel",
+									"jsClass": "MyTabPanel1",
+									"snapToGrid": 10,
+									"userConfig": {
+										"activeTab": 0,
+										"autoHeight": "-ext-undefined-",
+										"border": false,
+										"hideBorders": true,
+										"deferredRender": false
+									},
+									"cn": [
+										{
+											"id": "MyPanel27",
+											"cid": "panel",
+											"jsClass": "MyPanel4",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Administration",
+												"autoRef": "-ext-undefined-",
+												"layout": "fit",
+												"frame": true,
+												"autoScroll": true,
+												"hideBorders": "-ext-undefined-",
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent17",
+													"cid": "usercomponent",
+													"jsClass": "MandateClosingForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MandateClosingForm",
+														"userXType": "mandateclosingform",
+														"autoRef": "mandateclosingform"
+													},
+													"userComponent": "MyForm9"
+												}
+											]
+										},
+										{
+											"id": "MyPanel6",
+											"cid": "panel",
+											"jsClass": "MyPanel7",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Events",
+												"layout": "fit",
+												"hideBorders": true,
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent20",
+													"cid": "usercomponent",
+													"jsClass": "MandateMACGrid",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MandateMACGrid",
+														"userXType": "mandatemacgrid",
+														"autoRef": "macgrid"
+													},
+													"userComponent": "MyGrid3"
+												}
+											]
+										},
+										{
+											"id": "MyPanel14",
+											"cid": "panel",
+											"jsClass": "MyPanel4",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Mandate",
+												"autoRef": "-ext-undefined-",
+												"layout": "fit",
+												"frame": true,
+												"autoScroll": true,
+												"hideBorders": "-ext-undefined-",
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent3",
+													"cid": "usercomponent",
+													"jsClass": "MandateEditForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MandateEditForm",
+														"userXType": "mandateeditform",
+														"autoRef": "mandateeditform"
+													},
+													"userComponent": "MyForm2"
+												}
+											]
+										},
+										{
+											"id": "MyPanel16",
+											"cid": "panel",
+											"jsClass": "MyPanel16",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Responsability",
+												"autoScroll": true,
+												"hideBorders": true,
+												"border": false,
+												"layout": "fit"
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent7",
+													"cid": "usercomponent",
+													"jsClass": "MandateEditDescResponsabilityForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MandateEditDescResponsabilityForm",
+														"userXType": "mandateeditdescresponsabilityform",
+														"autoRef": "mandateresponsabilityform"
+													},
+													"userComponent": "MyForm6"
+												}
+											]
+										},
+										{
+											"id": "MyPanel24",
+											"cid": "panel",
+											"jsClass": "MyPanel16",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Requirement",
+												"autoScroll": true,
+												"hideBorders": true,
+												"border": false,
+												"layout": "fit"
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent16",
+													"cid": "usercomponent",
+													"jsClass": "MandateEditDescRequirementForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MandateEditDescRequirementForm",
+														"userXType": "mandateeditdescrequirementform",
+														"autoRef": "mandaterequirementform"
+													},
+													"userComponent": "MyForm7"
+												}
+											]
+										},
+										{
+											"id": "MyPanel15",
+											"cid": "panel",
+											"jsClass": "MyPanel7",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Candidates",
+												"layout": "fit",
+												"hideBorders": true,
+												"border": false
+											},
+											"cn": [
+												{
+													"id": "MyGrid5",
+													"cid": "grid",
+													"jsClass": "MyGrid4",
+													"snapToGrid": 10,
+													"userConfig": {
+														"title": "-ext-undefined-",
+														"store": "MandateCandidatesStore",
+														"autoRef": "candidatesgrid",
+														"columnLines": "-ext-undefined-",
+														"stripeRows": true,
+														"minColumnWidth": "-ext-undefined-",
+														"hideBorders": true,
+														"border": false
+													},
+													"cn": [
+														{
+															"id": "MyColumn29",
+															"cid": "gridcolumn",
+															"jsClass": "MyColumn1",
+															"snapToGrid": 10,
+															"userConfig": {
+																"header": "First Name",
+																"sortable": true,
+																"resizable": "-ext-undefined-",
+																"width": 100,
+																"dataIndex": "first_name"
+															}
+														},
+														{
+															"id": "MyColumn30",
+															"cid": "gridcolumn",
+															"jsClass": "MyColumn4",
+															"snapToGrid": 10,
+															"userConfig": {
+																"header": "Last Name",
+																"sortable": true,
+																"resizable": "-ext-undefined-",
+																"width": 100,
+																"dataIndex": "last_name"
+															}
+														},
+														{
+															"id": "MyColumn31",
+															"cid": "gridcolumn",
+															"jsClass": "MyColumn4",
+															"snapToGrid": 10,
+															"userConfig": {
+																"header": "Phone",
+																"sortable": true,
+																"resizable": "-ext-undefined-",
+																"width": 100,
+																"dataIndex": "phone"
+															}
+														},
+														{
+															"id": "MyPagingToolbar5",
+															"cid": "pagingtoolbar",
+															"jsClass": "MyPagingToolbar4",
+															"dock": "bbar",
+															"snapToGrid": 10,
+															"userConfig": {
+																"store": "MandateCandidatesStore",
+																"buttonAlign": "right"
+															}
+														},
+														{
+															"id": "MyGridView5",
+															"cid": "gridview",
+															"jsClass": "MyGridView2",
+															"dock": "view",
+															"snapToGrid": 10,
+															"dockCls": "Ext.grid.GridView",
+															"userConfig": {
+																"forceFit": true,
+																"enableRowBody": "-ext-undefined-"
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyPanel12",
+					"cid": "panel",
+					"jsClass": "MyPanel8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"width": 400,
+						"height": 250,
+						"region": "east",
+						"autoRef": "infopanel",
+						"tpl": "\n\n",
+						"collapsible": true,
+						"split": true,
+						"padding": "-ext-undefined-",
+						"hideBorders": true,
+						"border": false,
+						"autoScroll": true
+					}
+				}
+			]
+		},
+		{
+			"id": "MyPanel17",
+			"cid": "panel",
+			"jsClass": "MACClass",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "Events",
+				"width": 576,
+				"layout": "border",
+				"hideBorders": true
+			},
+			"userXType": "macclass",
+			"cn": [
+				{
+					"id": "MyPanel18",
+					"cid": "panel",
+					"jsClass": "MyPanel9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "center",
+						"layout": "border",
+						"frame": "-ext-undefined-",
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyUserComponent8",
+							"cid": "usercomponent",
+							"jsClass": "MACGrid",
+							"snapToGrid": 10,
+							"userConfig": {
+								"jsClass": "MACGrid",
+								"userXType": "macgrid",
+								"autoRef": "grid",
+								"region": "center"
+							},
+							"userComponent": "MyGrid2"
+						},
+						{
+							"id": "MyPanel20",
+							"cid": "panel",
+							"jsClass": "MyPanel5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"region": "south",
+								"width": 250,
+								"collapsed": "-ext-undefined-",
+								"collapsible": true,
+								"draggable": "-ext-undefined-",
+								"floating": "-ext-undefined-",
+								"floatable": false,
+								"split": true,
+								"titleCollapse": true,
+								"layout": "fit",
+								"hideBorders": true,
+								"border": false,
+								"height": 250
+							},
+							"cn": [
+								{
+									"id": "MyTabPanel3",
+									"cid": "tabpanel",
+									"jsClass": "MyTabPanel1",
+									"snapToGrid": 10,
+									"userConfig": {
+										"activeTab": 0,
+										"autoHeight": "-ext-undefined-",
+										"border": false,
+										"hideBorders": true
+									},
+									"cn": [
+										{
+											"id": "MyPanel21",
+											"cid": "panel",
+											"jsClass": "MyPanel4",
+											"snapToGrid": 10,
+											"userConfig": {
+												"title": "Event",
+												"autoRef": "-ext-undefined-",
+												"layout": "fit",
+												"frame": true,
+												"autoScroll": true,
+												"hideBorders": true,
+												"border": "-ext-undefined-"
+											},
+											"cn": [
+												{
+													"id": "MyUserComponent10",
+													"cid": "usercomponent",
+													"jsClass": "MACEditForm",
+													"snapToGrid": 10,
+													"userConfig": {
+														"jsClass": "MACEditForm",
+														"userXType": "maceditform",
+														"autoRef": "editform"
+													},
+													"userComponent": "MyForm4"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyPanel19",
+					"cid": "panel",
+					"jsClass": "MyPanel8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"width": 400,
+						"height": 250,
+						"region": "east",
+						"autoRef": "infopanel",
+						"tpl": "\n\n",
+						"collapsible": true,
+						"split": true,
+						"padding": "-ext-undefined-",
+						"hideBorders": true,
+						"border": false,
+						"autoScroll": true
+					}
+				},
+				{
+					"id": "MyPanel26",
+					"cid": "panel",
+					"jsClass": "MyPanel26",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"region": "west",
+						"width": 250,
+						"titleCollapse": "-ext-undefined-",
+						"autoScroll": true,
+						"collapsible": true,
+						"collapseMode": "-ext-undefined-",
+						"padding": "-ext-undefined-",
+						"hideBorders": true,
+						"border": "-ext-undefined-",
+						"split": true,
+						"autoRef": "optionpanel"
+					},
+					"cn": [
+						{
+							"id": "MyUserComponent25",
+							"cid": "usercomponent",
+							"jsClass": "CandidateFilterPanel",
+							"snapToGrid": 10,
+							"userConfig": {
+								"jsClass": "MACFilterPanel",
+								"userXType": "macfilterpanel",
+								"autoScroll": true,
+								"layout": "-ext-undefined-"
+							},
+							"userComponent": "MyForm11"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm",
+			"cid": "form",
+			"jsClass": "CandidatePersonalEditForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "0 50 0 5",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"hideBorders": true,
+				"labelPad": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideLabels": "-ext-undefined-",
+				"id": "-ext-undefined-"
+			},
+			"userXType": "candidatepersonaleditform",
+			"cn": [
+				{
+					"id": "MyHiddenField",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "-ext-undefined-",
+						"name": "id"
+					}
+				},
+				{
+					"id": "MyCompositeField1",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "-ext-undefined-",
+						"anchor": "-ext-undefined-",
+						"hideLabel": true,
+						"labelSeparator": "-ext-undefined-",
+						"submitValue": false
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField6",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField6",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "First Name",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100
+							}
+						},
+						{
+							"id": "MyTextField",
+							"cid": "textfield",
+							"jsClass": "MyTextField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"name": "first_name",
+								"flex": 1,
+								"fieldLabel": "First Name",
+								"growMax": 100,
+								"maxLength": 50,
+								"allowBlank": false
+							}
+						},
+						{
+							"id": "MyDisplayField7",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField7",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Last Name",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100
+							}
+						},
+						{
+							"id": "MyTextField1",
+							"cid": "textfield",
+							"jsClass": "MyTextField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"name": "last_name",
+								"flex": 1,
+								"fieldLabel": "Last Name",
+								"width": "-ext-undefined-",
+								"growMax": 100,
+								"growMin": "-ext-undefined-",
+								"maxLength": 50,
+								"allowBlank": false
+							}
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField2",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField2",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "-ext-undefined-",
+						"anchor": "-ext-undefined-",
+						"submitValue": false,
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyCompositeField10",
+							"cid": "compositefield",
+							"jsClass": "MyCompositeField10",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"flex": 1
+							},
+							"cn": [
+								{
+									"id": "MyDisplayField8",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField8",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "Phone",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": 100
+									}
+								},
+								{
+									"id": "MyTextField4",
+									"cid": "textfield",
+									"jsClass": "MyTextField4",
+									"snapToGrid": 10,
+									"userConfig": {
+										"flex": 4,
+										"fieldLabel": "Phone",
+										"name": "phone",
+										"maxLength": "-ext-undefined-",
+										"maskRe": "/[0-9 -]/"
+									}
+								},
+								{
+									"id": "MyDisplayField21",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField8",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "Ext",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": "-ext-undefined-",
+										"flex": 1
+									}
+								},
+								{
+									"id": "MyTextField21",
+									"cid": "textfield",
+									"jsClass": "MyTextField4",
+									"snapToGrid": 10,
+									"userConfig": {
+										"flex": 2,
+										"fieldLabel": "Ext",
+										"name": "phone_extension",
+										"maxLength": 6,
+										"maskRe": "/[0-9 -]/",
+										"width": 50
+									}
+								}
+							]
+						},
+						{
+							"id": "MyCompositeField11",
+							"cid": "compositefield",
+							"jsClass": "MyCompositeField11",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label"
+							},
+							"cn": [
+								{
+									"id": "MyDisplayField9",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField9",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "Mobile",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": 100,
+										"flex": 1
+									}
+								},
+								{
+									"id": "MyTextField15",
+									"cid": "textfield",
+									"jsClass": "MyTextField4",
+									"snapToGrid": 10,
+									"userConfig": {
+										"flex": 6,
+										"fieldLabel": "Mobile",
+										"name": "mobile",
+										"maxLength": "-ext-undefined-",
+										"maskRe": "/[0-9 -]/"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "-ext-undefined-",
+						"anchor": "-ext-undefined-",
+						"autoWidth": "-ext-undefined-",
+						"name": "emails",
+						"submitValue": false,
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField10",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField10",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "EMail 1",
+								"flex": 1,
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100
+							}
+						},
+						{
+							"id": "MyTextField12",
+							"cid": "textfield",
+							"jsClass": "MyTextField12",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "EMail 1",
+								"name": "email_1",
+								"emptyText": "-ext-undefined-",
+								"vtype": "email",
+								"vtypeText": "",
+								"regex": "-ext-undefined-",
+								"allowBlank": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyDisplayField11",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField11",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "EMail 2",
+								"fieldLabel": "Label",
+								"width": 100,
+								"submitValue": false
+							}
+						},
+						{
+							"id": "MyTextField14",
+							"cid": "textfield",
+							"jsClass": "MyTextField12",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "EMail 2",
+								"name": "email_2",
+								"msgTarget": "-ext-undefined-",
+								"emptyText": "-ext-undefined-",
+								"vtype": "email",
+								"allowBlank": "-ext-undefined-",
+								"regex": "/^([\\w]+)(.[\\w]+)*@([\\w-]+\\.){1,5}([A-Za-z]){2,4}$/"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyTextField17",
+					"cid": "textfield",
+					"jsClass": "MyTextField17",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Address",
+						"name": "address",
+						"anchor": "100%",
+						"maxLength": 80
+					}
+				},
+				{
+					"id": "MyCompositeField3",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField3",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "City, State and Postal Code",
+						"anchor": "-ext-undefined-",
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyCompositeField12",
+							"cid": "compositefield",
+							"jsClass": "MyCompositeField12",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1
+							},
+							"cn": [
+								{
+									"id": "MyDisplayField12",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField12",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "City",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": 100
+									}
+								},
+								{
+									"id": "MyTextField2",
+									"cid": "textfield",
+									"jsClass": "MyTextField2",
+									"snapToGrid": 10,
+									"userConfig": {
+										"flex": 2,
+										"fieldLabel": "Label",
+										"name": "city",
+										"maxLength": 80
+									}
+								}
+							]
+						},
+						{
+							"id": "MyCompositeField13",
+							"cid": "compositefield",
+							"jsClass": "MyCompositeField13",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"flex": 1
+							},
+							"cn": [
+								{
+									"id": "MyDisplayField13",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField13",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "State",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": 100,
+										"flex": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyTextField3",
+									"cid": "textfield",
+									"jsClass": "MyTextField3",
+									"snapToGrid": 10,
+									"userConfig": {
+										"name": "state",
+										"flex": 1,
+										"maxLength": 80
+									}
+								},
+								{
+									"id": "MyDisplayField14",
+									"cid": "displayfield",
+									"jsClass": "MyDisplayField13",
+									"snapToGrid": 10,
+									"userConfig": {
+										"value": "Postal Code",
+										"fieldLabel": "Label",
+										"submitValue": false,
+										"width": "-ext-undefined-",
+										"flex": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyTextField16",
+									"cid": "textfield",
+									"jsClass": "MyTextField16",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Label",
+										"name": "postal_code",
+										"flex": 1,
+										"maxLength": 80
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "MyTextField22",
+					"cid": "textfield",
+					"jsClass": "MyTextField22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Employer",
+						"anchor": "100%",
+						"name": "employer"
+					}
+				},
+				{
+					"id": "MyToolbar1",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar1",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"anchor": "-ext-undefined-",
+						"autoWidth": true
+					},
+					"cn": [
+						{
+							"id": "MyButton2",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "updatebutton"
+							}
+						},
+						{
+							"id": "MyButton3",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save As New",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "createbutton",
+								"hidden": true,
+								"width": 75
+							}
+						},
+						{
+							"id": "MySpacer",
+							"cid": "spacer",
+							"jsClass": "MySpacer",
+							"snapToGrid": 10,
+							"userConfig": {
+								"width": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm8",
+			"cid": "form",
+			"jsClass": "CandidateExperienceEditForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "0 50  0 5",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"hideBorders": true,
+				"labelPad": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideLabels": "-ext-undefined-",
+				"id": "-ext-undefined-"
+			},
+			"userXType": "candidateexperienceeditform",
+			"cn": [
+				{
+					"id": "MyHiddenField6",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "-ext-undefined-",
+						"name": "id"
+					}
+				},
+				{
+					"id": "MyCompositeField9",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Managment Experience",
+						"anchor": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyCombo10",
+							"cid": "combobox",
+							"jsClass": "MyCombo",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "managment_experience",
+								"store": "ManagmentExperienceStore",
+								"valueField": "id",
+								"displayField": "title",
+								"forceSelection": true,
+								"hiddenName": "managment_experience",
+								"allowBlank": "-ext-undefined-",
+								"mode": "local",
+								"autoRef": "-ext-undefined-",
+								"submitValue": "-ext-undefined-",
+								"clearFilterOnReset": "-ext-undefined-",
+								"triggerAction": "all",
+								"typeAhead": true,
+								"editable": "-ext-undefined-",
+								"readOnly": "-ext-undefined-",
+								"flex": 2,
+								"id": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyDisplayField",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Salary",
+								"fieldLabel": "-ext-undefined-",
+								"flex": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyNumberField",
+							"cid": "numberfield",
+							"jsClass": "MyTextField18",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "salary",
+								"emptyText": "-ext-undefined-",
+								"flex": 1,
+								"submitValue": "-ext-undefined-",
+								"fieldLabel": "Label"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField4",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Keywords",
+						"anchor": "100%"
+					},
+					"cn": [
+						{
+							"id": "MyTextField18",
+							"cid": "textfield",
+							"jsClass": "MyTextField18",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label",
+								"name": "keywords",
+								"maxLength": 50
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar9",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar1",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"anchor": "-ext-undefined-",
+						"autoWidth": true
+					},
+					"cn": [
+						{
+							"id": "MyButton24",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "updatebutton"
+							}
+						},
+						{
+							"id": "MyButton25",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save As New",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "createbutton",
+								"hidden": true,
+								"width": 75
+							}
+						},
+						{
+							"id": "MySpacer1",
+							"cid": "spacer",
+							"jsClass": "MySpacer",
+							"snapToGrid": 10,
+							"userConfig": {
+								"width": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm2",
+			"cid": "form",
+			"jsClass": "MandateEditForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "0 50 0 5",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideBorders": true
+			},
+			"userXType": "mandateeditform",
+			"cn": [
+				{
+					"id": "MyHiddenField1",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "-ext-undefined-",
+						"name": "id"
+					}
+				},
+				{
+					"id": "MyHiddenField13",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"name": "form",
+						"value": "mandateeditform"
+					}
+				},
+				{
+					"id": "MyCompositeField6",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField6",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "-ext-undefined-",
+						"anchor": "100%",
+						"hideLabel": true,
+						"name": "-ext-undefined-",
+						"value": "-ext-undefined-",
+						"submitValue": false
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField5",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Title",
+								"submitValue": false,
+								"fieldLabel": "Label",
+								"width": 100
+							}
+						},
+						{
+							"id": "MyTextField10",
+							"cid": "textfield",
+							"jsClass": "MyTextField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"name": "title",
+								"width": "-ext-undefined-",
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyDisplayField2",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Posting Start",
+								"submitValue": false,
+								"width": 90
+							}
+						},
+						{
+							"id": "MyDateField4",
+							"cid": "datefield",
+							"jsClass": "MyDateField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "posting_start_date",
+								"format": "Y-m-d",
+								"autoWidth": "-ext-undefined-",
+								"flex": 1,
+								"width": 150
+							}
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField5",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "-ext-undefined-",
+						"anchor": "100%",
+						"hideLabel": true,
+						"submitValue": false
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField1",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Hiring Manager",
+								"submitValue": false,
+								"name": "-ext-undefined-",
+								"flex": "-ext-undefined-",
+								"width": 100
+							}
+						},
+						{
+							"id": "MyCombo8",
+							"cid": "combobox",
+							"jsClass": "MyTextField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"name": "hiring_manager",
+								"store": "HiringManagerStore",
+								"hiddenName": "hiring_manager",
+								"submitValue": "-ext-undefined-",
+								"valueField": "id",
+								"autoRef": "cbhiringmanager",
+								"displayField": "name",
+								"mode": "local",
+								"typeAhead": true,
+								"allowBlank": false,
+								"triggerAction": "all",
+								"flex": 2
+							}
+						},
+						{
+							"id": "MyDisplayField4",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Status",
+								"submitValue": false,
+								"name": "-ext-undefined-",
+								"flex": "-ext-undefined-",
+								"fieldLabel": "Label",
+								"width": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyCombo",
+							"cid": "combobox",
+							"jsClass": "MyCombo",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "status",
+								"store": "MandateStatusStore",
+								"valueField": "id",
+								"displayField": "title",
+								"forceSelection": true,
+								"hiddenName": "status",
+								"allowBlank": false,
+								"mode": "local",
+								"autoRef": "cbstatus",
+								"submitValue": "-ext-undefined-",
+								"clearFilterOnReset": "-ext-undefined-",
+								"triggerAction": "all",
+								"typeAhead": true,
+								"editable": "-ext-undefined-",
+								"readOnly": "-ext-undefined-",
+								"autoWidth": "-ext-undefined-",
+								"flex": 1,
+								"minListWidth": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyDisplayField3",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Posting End",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"flex": "-ext-undefined-",
+								"width": 90
+							}
+						},
+						{
+							"id": "MyDateField",
+							"cid": "datefield",
+							"jsClass": "MyDateField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "posting_end_date",
+								"format": "Y-m-d",
+								"autoWidth": "-ext-undefined-",
+								"flex": 1,
+								"width": 150
+							}
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField7",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"submitValue": false,
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField15",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField15",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "City",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100
+							}
+						},
+						{
+							"id": "MyTextField19",
+							"cid": "textfield",
+							"jsClass": "MyTextField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label",
+								"name": "city"
+							}
+						},
+						{
+							"id": "MyDisplayField16",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField15",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Posting Number",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 90
+							}
+						},
+						{
+							"id": "MyTextField20",
+							"cid": "textfield",
+							"jsClass": "MyTextField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label",
+								"name": "posting_number",
+								"width": 150
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar13",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar13",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton6",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "updatebutton",
+								"width": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyButton7",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save As New",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "createbutton",
+								"hidden": true,
+								"width": 75
+							}
+						},
+						{
+							"id": "MySpacer2",
+							"cid": "spacer",
+							"jsClass": "MySpacer2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"width": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm9",
+			"cid": "form",
+			"jsClass": "MandateClosingForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "0 50 0 5",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideBorders": true
+			},
+			"userXType": "mandateclosingform",
+			"cn": [
+				{
+					"id": "MyHiddenField12",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "-ext-undefined-",
+						"name": "id"
+					}
+				},
+				{
+					"id": "MyHiddenField7",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"name": "form",
+						"value": "mandateclosingform"
+					}
+				},
+				{
+					"id": "MyCompositeField14",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"submitValue": false,
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField30",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField17",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Candidate Source",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyTextField26",
+							"cid": "textfield",
+							"jsClass": "MyTextField21",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label",
+								"name": "candidate_source"
+							}
+						},
+						{
+							"id": "MyDisplayField31",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField17",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Posting Sources",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"flex": "-ext-undefined-",
+								"autoWidth": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyTextField27",
+							"cid": "textfield",
+							"jsClass": "MyTextField21",
+							"snapToGrid": 10,
+							"userConfig": {
+								"flex": 1,
+								"fieldLabel": "Label",
+								"name": "posting_sources"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyCompositeField15",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField10",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"submitValue": false,
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField32",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Start Date",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"width": 100
+							}
+						},
+						{
+							"id": "MyDateField9",
+							"cid": "datefield",
+							"jsClass": "MyDateField5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"name": "start_date",
+								"flex": 2,
+								"format": "Y-m-d"
+							}
+						},
+						{
+							"id": "MyDisplayField33",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "End Date",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyDateField10",
+							"cid": "datefield",
+							"jsClass": "MyDateField6",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"name": "end_date",
+								"flex": 2,
+								"format": "Y-m-d"
+							}
+						},
+						{
+							"id": "MyDisplayField34",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Consulting Time",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyNumberField3",
+							"cid": "numberfield",
+							"jsClass": "MyNumberField1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"allowNegative": false,
+								"width": "-ext-undefined-",
+								"flex": 1,
+								"name": "consulting_time",
+								"decimalPrecision": 1
+							}
+						},
+						{
+							"id": "MyDisplayField35",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField19",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Hired Number",
+								"fieldLabel": "Label",
+								"submitValue": false,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyNumberField4",
+							"cid": "numberfield",
+							"jsClass": "MyNumberField2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"allowDecimals": false,
+								"allowNegative": false,
+								"width": "-ext-undefined-",
+								"flex": 1,
+								"name": "hired_number"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyTextArea4",
+					"cid": "textarea",
+					"jsClass": "MyTextArea",
+					"snapToGrid": 10,
+					"userConfig": {
+						"anchor": "100%",
+						"fieldLabel": "Comments",
+						"name": "comments"
+					}
+				},
+				{
+					"id": "MyToolbar6",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar13",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton26",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "updatebutton",
+								"width": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MySpacer3",
+							"cid": "spacer",
+							"jsClass": "MySpacer2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"autoWidth": "-ext-undefined-",
+								"width": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm6",
+			"cid": "form",
+			"jsClass": "MandateEditDescResponsabilityForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "-ext-undefined-",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideBorders": true
+			},
+			"userXType": "mandateeditdescresponsabilityform",
+			"cn": [
+				{
+					"id": "MyFieldSet6",
+					"cid": "fieldset",
+					"jsClass": "MyFieldSet",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"labelWidth": "-ext-undefined-",
+						"layout": "-ext-undefined-",
+						"padding": "-ext-undefined-",
+						"titleCollapse": "-ext-undefined-",
+						"collapsible": "-ext-undefined-",
+						"hideCollapseTool": "-ext-undefined-",
+						"collapseFirst": "-ext-undefined-",
+						"autoWidth": "-ext-undefined-",
+						"hideBorders": true,
+						"labelPad": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyHtmlEditor1",
+							"cid": "htmleditor",
+							"jsClass": "MyHtmlEditor1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"anchor": "100%",
+								"height": 150,
+								"fieldLabel": "Label",
+								"hideLabel": true,
+								"name": "responsability"
+							}
+						},
+						{
+							"id": "MyHiddenField4",
+							"cid": "hidden",
+							"jsClass": "MyHiddenField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"anchor": "-ext-undefined-",
+								"name": "id"
+							}
+						},
+						{
+							"id": "MyHiddenField11",
+							"cid": "hidden",
+							"jsClass": "MyHiddenField9",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"anchor": "100%",
+								"name": "form",
+								"value": "mandateresponsabilityform"
+							}
+						},
+						{
+							"id": "MyToolbar2",
+							"cid": "toolbar",
+							"jsClass": "MyToolbar1",
+							"dock": "fbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"buttonAlign": "-ext-undefined-",
+								"anchor": "-ext-undefined-"
+							},
+							"cn": [
+								{
+									"id": "MyButton22",
+									"cid": "button",
+									"jsClass": "MyButton2",
+									"snapToGrid": 10,
+									"userConfig": {
+										"text": "Save",
+										"autoWidth": "-ext-undefined-",
+										"autoRef": "updatebutton",
+										"formBind": "-ext-undefined-"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm7",
+			"cid": "form",
+			"jsClass": "MandateEditDescRequirementForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "-ext-undefined-",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"labelWidth": "-ext-undefined-",
+				"autoWidth": true,
+				"hideBorders": true
+			},
+			"userXType": "mandateeditdescrequirementform",
+			"cn": [
+				{
+					"id": "MyFieldSet7",
+					"cid": "fieldset",
+					"jsClass": "MyFieldSet",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"labelWidth": "-ext-undefined-",
+						"layout": "-ext-undefined-",
+						"padding": "",
+						"titleCollapse": "-ext-undefined-",
+						"collapsible": "-ext-undefined-",
+						"hideCollapseTool": "-ext-undefined-",
+						"collapseFirst": "-ext-undefined-",
+						"autoWidth": "-ext-undefined-",
+						"hideBorders": true,
+						"labelPad": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyHtmlEditor",
+							"cid": "htmleditor",
+							"jsClass": "MyHtmlEditor",
+							"snapToGrid": 10,
+							"userConfig": {
+								"anchor": "100%",
+								"height": 150,
+								"fieldLabel": "Label",
+								"hideLabel": true,
+								"name": "requirement"
+							}
+						},
+						{
+							"id": "MyHiddenField5",
+							"cid": "hidden",
+							"jsClass": "MyHiddenField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"anchor": "-ext-undefined-",
+								"name": "id"
+							}
+						},
+						{
+							"id": "MyHiddenField10",
+							"cid": "hidden",
+							"jsClass": "MyHiddenField9",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"anchor": "100%",
+								"name": "form",
+								"value": "mandaterequirementform"
+							}
+						},
+						{
+							"id": "MyToolbar4",
+							"cid": "toolbar",
+							"jsClass": "MyToolbar1",
+							"dock": "fbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"buttonAlign": "-ext-undefined-",
+								"anchor": "-ext-undefined-"
+							},
+							"cn": [
+								{
+									"id": "MyButton23",
+									"cid": "button",
+									"jsClass": "MyButton2",
+									"snapToGrid": 10,
+									"userConfig": {
+										"text": "Save",
+										"autoWidth": "-ext-undefined-",
+										"autoRef": "updatebutton",
+										"formBind": "-ext-undefined-"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyForm4",
+			"cid": "form",
+			"jsClass": "MACEditForm",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"layout": "-ext-undefined-",
+				"autoHeight": true,
+				"padding": "10 10 10 10",
+				"border": false,
+				"labelAlign": "-ext-undefined-",
+				"autoScroll": "-ext-undefined-",
+				"collapsed": "-ext-undefined-",
+				"animCollapse": false,
+				"collapsible": "-ext-undefined-",
+				"hideBorders": true,
+				"autoWidth": true
+			},
+			"userXType": "maceditform",
+			"cn": [
+				{
+					"id": "MyHiddenField3",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id"
+					}
+				},
+				{
+					"id": "MyHiddenField2",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField2",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"name": "candidate"
+					}
+				},
+				{
+					"id": "MyHiddenField14",
+					"cid": "hidden",
+					"jsClass": "MyHiddenField2",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"name": "mandate"
+					}
+				},
+				{
+					"id": "MyCompositeField8",
+					"cid": "compositefield",
+					"jsClass": "MyCompositeField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"fieldLabel": "Label",
+						"anchor": "100%",
+						"hideLabel": true
+					},
+					"cn": [
+						{
+							"id": "MyDisplayField17",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField17",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Activity",
+								"fieldLabel": "Label",
+								"width": 100,
+								"submitValue": false
+							}
+						},
+						{
+							"id": "MyCombo2",
+							"cid": "combobox",
+							"jsClass": "MyCombo",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "activity",
+								"store": "ActivitiesStore",
+								"valueField": "id",
+								"displayField": "title",
+								"forceSelection": true,
+								"hiddenName": "activity",
+								"allowBlank": false,
+								"mode": "local",
+								"autoRef": "cbactivity",
+								"submitValue": "-ext-undefined-",
+								"clearFilterOnReset": "-ext-undefined-",
+								"triggerAction": "all",
+								"typeAhead": true,
+								"editable": "-ext-undefined-",
+								"readOnly": "-ext-undefined-",
+								"flex": 2
+							}
+						},
+						{
+							"id": "MyDisplayField18",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField17",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Status",
+								"fieldLabel": "Label",
+								"width": "-ext-undefined-",
+								"submitValue": false,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyCombo3",
+							"cid": "combobox",
+							"jsClass": "MyCombo",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "status",
+								"store": "MACStatusStore",
+								"valueField": "id",
+								"displayField": "title",
+								"forceSelection": true,
+								"hiddenName": "status",
+								"allowBlank": false,
+								"mode": "local",
+								"autoRef": "cbstatus",
+								"submitValue": "-ext-undefined-",
+								"clearFilterOnReset": "-ext-undefined-",
+								"triggerAction": "all",
+								"typeAhead": true,
+								"editable": "-ext-undefined-",
+								"readOnly": "-ext-undefined-",
+								"flex": 2
+							}
+						},
+						{
+							"id": "MyDisplayField19",
+							"cid": "displayfield",
+							"jsClass": "MyDisplayField17",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "Date",
+								"fieldLabel": "Label",
+								"width": "-ext-undefined-",
+								"submitValue": false,
+								"flex": 1
+							}
+						},
+						{
+							"id": "MyDateField2",
+							"cid": "datefield",
+							"jsClass": "MyDateField",
+							"snapToGrid": 10,
+							"userConfig": {
+								"name": "date",
+								"format": "Y-m-d",
+								"flex": 1
+							}
+						}
+					]
+				},
+				{
+					"id": "MyTextArea2",
+					"cid": "textarea",
+					"jsClass": "MyTextArea",
+					"snapToGrid": 10,
+					"userConfig": {
+						"anchor": "100%",
+						"fieldLabel": "Description",
+						"name": "description",
+						"height": 163
+					}
+				},
+				{
+					"id": "MyToolbar11",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar1",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton12",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "updatebutton"
+							}
+						},
+						{
+							"id": "MyButton13",
+							"cid": "button",
+							"jsClass": "MyButton2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Save as New",
+								"autoWidth": "-ext-undefined-",
+								"autoRef": "createbutton",
+								"hidden": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MySpacer4",
+							"cid": "spacer",
+							"jsClass": "MySpacer",
+							"snapToGrid": 10,
+							"userConfig": {
+								"width": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyGrid1",
+			"cid": "grid",
+			"jsClass": "CandidateGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "CandidateStore",
+				"autoHeight": "-ext-undefined-",
+				"stripeRows": true,
+				"columnLines": "-ext-undefined-",
+				"autoDestroy": "-ext-undefined-",
+				"autoShow": true,
+				"border": false,
+				"hideBorders": true,
+				"titleCollapse": "-ext-undefined-"
+			},
+			"userXType": "candidategrid",
+			"cn": [
+				{
+					"id": "MyRowSelectionModel",
+					"cid": "gridrowselectionmodel",
+					"jsClass": "MyRowSelectionModel",
+					"dock": "selModel",
+					"snapToGrid": 10,
+					"dockCls": "Ext.grid.RowSelectionModel",
+					"userConfig": {
+						"singleSelect": true
+					}
+				},
+				{
+					"id": "MyColumn2",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "id",
+						"header": "Candidate",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 60,
+						"tooltip": "Candidate ID",
+						"align": "-ext-undefined-",
+						"id": "id",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn1",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "First Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "first_name",
+						"id": "first_name"
+					}
+				},
+				{
+					"id": "MyColumn18",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Last Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "last_name",
+						"fixed": "-ext-undefined-",
+						"id": "last_name"
+					}
+				},
+				{
+					"id": "MyColumn4",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Phone",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "phone",
+						"id": "phone",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn34",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Ph Ext",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 50,
+						"dataIndex": "phone_extension",
+						"tooltip": "Phone Extension",
+						"id": "phone_extension",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn5",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Mobile",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "mobile",
+						"id": "mobile"
+					}
+				},
+				{
+					"id": "MyColumn6",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "EMail 1",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "email_1",
+						"fixed": "-ext-undefined-",
+						"id": "email1"
+					}
+				},
+				{
+					"id": "MyColumn",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Recruiter",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 70,
+						"dataIndex": "created_by__username",
+						"id": "created_by__username",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyToolbar",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton1",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "New",
+								"autoRef": "newbutton",
+								"iconCls": "img_add_candidate",
+								"scale": "medium",
+								"tooltip": "Create a new candidate"
+							}
+						},
+						{
+							"id": "MyButton31",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Add Event",
+								"autoRef": "addmacbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Add event to selected candidate",
+								"iconCls": "img_add_event",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton16",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Events",
+								"autoRef": "macsbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Show events for the selected candidate",
+								"iconCls": "img_list_events",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton17",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Mandates",
+								"autoRef": "mandatesbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Show mandates for the selected candidate",
+								"iconCls": "img_list_mandates",
+								"scale": "medium"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar18",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar18",
+					"dock": "bbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"buttonAlign": "right"
+					},
+					"cn": [
+						{
+							"id": "MyPagingToolbar3",
+							"cid": "pagingtoolbar",
+							"jsClass": "MyPagingToolbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"store": "CandidateStore",
+								"autoWidth": "-ext-undefined-",
+								"pageSize": 15,
+								"hideBorders": true,
+								"autoRef": "pagingtoolbar",
+								"autoHeight": true,
+								"height": "-ext-undefined-",
+								"displayInfo": true,
+								"buttonAlign": "right"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyGridView",
+					"cid": "gridview",
+					"jsClass": "MyGridView",
+					"dock": "view",
+					"snapToGrid": 10,
+					"dockCls": "Ext.grid.GridView",
+					"userConfig": {
+						"forceFit": true,
+						"enableRowBody": "-ext-undefined-"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyGrid",
+			"cid": "grid",
+			"jsClass": "MandateGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "MandateStore",
+				"autoHeight": "-ext-undefined-",
+				"stripeRows": true,
+				"columnLines": "-ext-undefined-",
+				"autoDestroy": "-ext-undefined-",
+				"autoShow": true,
+				"border": false,
+				"hideBorders": true,
+				"titleCollapse": "-ext-undefined-"
+			},
+			"userXType": "mandategrid",
+			"cn": [
+				{
+					"id": "MyRowSelectionModel1",
+					"cid": "gridrowselectionmodel",
+					"jsClass": "MyRowSelectionModel1",
+					"dock": "selModel",
+					"snapToGrid": 10,
+					"dockCls": "Ext.grid.RowSelectionModel",
+					"userConfig": {
+						"singleSelect": true
+					}
+				},
+				{
+					"id": "MyColumn7",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "id",
+						"header": "Mandate",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 60,
+						"tooltip": "Candidate ID",
+						"align": "-ext-undefined-",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn8",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "title",
+						"header": "Title",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"align": "-ext-undefined-",
+						"fixed": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyColumn10",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Status",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "status",
+						"id": "status__title"
+					}
+				},
+				{
+					"id": "MyColumn22",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Candidates",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 70,
+						"dataIndex": "candidate_count",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn9",
+					"cid": "datecolumn",
+					"jsClass": "MyColumn9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Post End",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"dataIndex": "posting_end_date",
+						"format": "Y-m-d",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn12",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Hiring Manager",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "hiring_manager",
+						"fixed": "-ext-undefined-",
+						"id": "hiring_manager__name"
+					}
+				},
+				{
+					"id": "MyColumn13",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Recruiter",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 70,
+						"dataIndex": "created_by__username",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyToolbar5",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"autoRef": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyButton4",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "New",
+								"autoRef": "newbutton",
+								"iconCls": "img_add_mandate",
+								"scale": "medium",
+								"tooltip": "Add a new mandate"
+							}
+						},
+						{
+							"id": "MyButton18",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Add Event",
+								"autoRef": "addmacbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Show MACs for the selected candidate",
+								"iconCls": "img_add_event",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton32",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Events",
+								"autoRef": "macsbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Show events for the selected candidate",
+								"iconCls": "img_list_events",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton19",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Candidates",
+								"autoRef": "candidatesbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Show candidates for the selected candidate",
+								"iconCls": "img_list_candidates",
+								"scale": "medium"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar17",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar17",
+					"dock": "bbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"buttonAlign": "right"
+					},
+					"cn": [
+						{
+							"id": "MyPagingToolbar",
+							"cid": "pagingtoolbar",
+							"jsClass": "MyPagingToolbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"store": "MandateStore",
+								"autoWidth": "-ext-undefined-",
+								"pageSize": 15,
+								"hideBorders": true,
+								"autoRef": "pagingtoolbar",
+								"displayInfo": true,
+								"buttonAlign": "right"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyUserComponent6",
+					"cid": "usercomponent",
+					"jsClass": "MandateGridView",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MandateGridView",
+						"userXType": "mandategridview"
+					},
+					"userComponent": "MyGridView1"
+				}
+			]
+		},
+		{
+			"id": "MyGrid2",
+			"cid": "grid",
+			"jsClass": "MACGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "MACStore",
+				"autoHeight": "-ext-undefined-",
+				"stripeRows": true,
+				"columnLines": "-ext-undefined-",
+				"autoDestroy": "-ext-undefined-",
+				"autoShow": true,
+				"border": false,
+				"hideBorders": true,
+				"titleCollapse": "-ext-undefined-",
+				"id": "mactab",
+				"hideHeaders": "-ext-undefined-"
+			},
+			"userXType": "macgrid",
+			"cn": [
+				{
+					"id": "MyRowSelectionModel2",
+					"cid": "gridrowselectionmodel",
+					"jsClass": "MyRowSelectionModel2",
+					"dock": "selModel",
+					"snapToGrid": 10,
+					"dockCls": "Ext.grid.RowSelectionModel",
+					"userConfig": {
+						"singleSelect": true
+					}
+				},
+				{
+					"id": "MyColumn3",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "id",
+						"header": "Event",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 60,
+						"tooltip": "Candidate ID",
+						"align": "-ext-undefined-",
+						"id": "id",
+						"hidden": "-ext-undefined-",
+						"groupName": "-ext-undefined-",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn11",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Candidate",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 60,
+						"dataIndex": "candidate",
+						"id": "candidate__id",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn23",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "First Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "candidate",
+						"id": "candidate__first_name"
+					}
+				},
+				{
+					"id": "MyColumn16",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Last Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "candidate",
+						"id": "candidate__last_name"
+					}
+				},
+				{
+					"id": "MyColumn41",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Phone",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "candidate",
+						"id": "candidate__phone"
+					}
+				},
+				{
+					"id": "MyColumn15",
+					"cid": "datecolumn",
+					"jsClass": "MyColumn9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Date",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"dataIndex": "date",
+						"format": "Y-m-d",
+						"id": "date",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn14",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Description",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 200,
+						"dataIndex": "description"
+					}
+				},
+				{
+					"id": "MyToolbar10",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton11",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "New",
+								"autoRef": "newbutton",
+								"iconCls": "img_add_event",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton20",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Candidate",
+								"autoRef": "candidatebutton",
+								"tooltip": "Show cadidate for selected event",
+								"iconCls": "img_list_candidates",
+								"scale": "medium"
+							}
+						},
+						{
+							"id": "MyButton21",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Mandate",
+								"autoRef": "mandatebutton",
+								"tooltip": "Show mandate for selected event",
+								"iconCls": "img_list_mandates",
+								"scale": "medium"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar20",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar20",
+					"snapToGrid": 10,
+					"userConfig": {
+						"autoRef": "extratb",
+						"width": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyLabel2",
+							"cid": "label",
+							"jsClass": "MyLabel2",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Extra Filters"
+							}
+						},
+						{
+							"id": "MyFill",
+							"cid": "tbfill",
+							"jsClass": "MyFill",
+							"snapToGrid": 10
+						},
+						{
+							"id": "MyLabel",
+							"cid": "label",
+							"jsClass": "MyLabel",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "From:"
+							}
+						},
+						{
+							"id": "MyDateField1",
+							"cid": "datefield",
+							"jsClass": "MyDateField1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"format": "Y-m-d",
+								"name": "-ext-undefined-",
+								"id": "fromdate",
+								"autoRef": "extrafilterfromdate",
+								"width": 100,
+								"autoShow": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MySpacer5",
+							"cid": "tbspacer",
+							"jsClass": "MySpacer5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"width": 100
+							}
+						},
+						{
+							"id": "MyLabel1",
+							"cid": "label",
+							"jsClass": "MyLabel1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "To:"
+							}
+						},
+						{
+							"id": "MyDateField5",
+							"cid": "datefield",
+							"jsClass": "MyDateField5",
+							"snapToGrid": 10,
+							"userConfig": {
+								"format": "Y-m-d",
+								"name": "-ext-undefined-",
+								"autoRef": "extrafiltertodate",
+								"width": 100,
+								"id": "todate"
+							}
+						},
+						{
+							"id": "MySpacer6",
+							"cid": "tbspacer",
+							"jsClass": "MySpacer6",
+							"snapToGrid": 10,
+							"userConfig": {
+								"width": 100
+							}
+						},
+						{
+							"id": "MyButton35",
+							"cid": "button",
+							"jsClass": "MyButton35",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Apply",
+								"autoRef": "extrafilterapplybutton"
+							}
+						},
+						{
+							"id": "MyButton36",
+							"cid": "button",
+							"jsClass": "MyButton36",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Reset",
+								"autoRef": "extrafilterresetbutton"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyToolbar16",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar16",
+					"dock": "bbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"buttonAlign": "right"
+					},
+					"cn": [
+						{
+							"id": "MyPagingToolbar2",
+							"cid": "pagingtoolbar",
+							"jsClass": "MyPagingToolbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"store": "MACStore",
+								"autoWidth": "-ext-undefined-",
+								"pageSize": 15,
+								"hideBorders": true,
+								"autoRef": "pagingtoolbar",
+								"displayInfo": true,
+								"buttonAlign": "right"
+							}
+						}
+					]
+				},
+				{
+					"id": "MyUserComponent2",
+					"cid": "usercomponent",
+					"jsClass": "MACGridView",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MACGridView",
+						"userXType": "macgridview"
+					},
+					"userComponent": "MyGridView4"
+				}
+			]
+		},
+		{
+			"id": "MyWindow",
+			"cid": "window",
+			"jsClass": "CandidateNewWindow",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "New Candidate",
+				"width": 434,
+				"height": "-ext-undefined-",
+				"layout": "fit",
+				"autoHeight": true,
+				"titleCollapse": "-ext-undefined-",
+				"autoShow": "-ext-undefined-",
+				"buttonAlign": "-ext-undefined-",
+				"collapseFirst": "-ext-undefined-",
+				"disabled": "-ext-undefined-",
+				"collapsible": true,
+				"stateful": "-ext-undefined-",
+				"defaultButton": "-ext-undefined-",
+				"maximizable": "-ext-undefined-",
+				"minimizable": "-ext-undefined-",
+				"initHidden": false,
+				"modal": "-ext-undefined-"
+			},
+			"userXType": "candidatenewwindow",
+			"cn": [
+				{
+					"id": "MyForm3",
+					"cid": "form",
+					"jsClass": "MyForm3",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"autoHeight": true,
+						"autoRef": "form",
+						"hideBorders": true,
+						"hideLabels": "-ext-undefined-",
+						"autoShow": "-ext-undefined-",
+						"forceLayout": "-ext-undefined-",
+						"defaultType": "-ext-undefined-",
+						"layout": "auto"
+					},
+					"cn": [
+						{
+							"id": "MyFieldSet1",
+							"cid": "fieldset",
+							"jsClass": "MyFieldSet",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"labelWidth": 35,
+								"layout": "-ext-undefined-",
+								"padding": 5,
+								"height": "-ext-undefined-",
+								"hideBorders": "-ext-undefined-",
+								"border": "-ext-undefined-",
+								"collapseFirst": "-ext-undefined-",
+								"titleCollapse": "-ext-undefined-",
+								"hideCollapseTool": "-ext-undefined-",
+								"animCollapse": "-ext-undefined-",
+								"collapsible": "-ext-undefined-",
+								"labelAlign": "-ext-undefined-",
+								"autoHeight": true,
+								"hideLabels": "-ext-undefined-"
+							},
+							"cn": [
+								{
+									"id": "MyTextField5",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"autoWidth": "-ext-undefined-",
+										"name": "first_name",
+										"anchor": "95%",
+										"fieldLabel": "First Name",
+										"allowBlank": false
+									}
+								},
+								{
+									"id": "MyTextField6",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Last Name",
+										"anchor": "95%",
+										"autoWidth": "-ext-undefined-",
+										"name": "last_name",
+										"allowBlank": false
+									}
+								},
+								{
+									"id": "MyTextField7",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Phone",
+										"anchor": "95%",
+										"autoWidth": "-ext-undefined-",
+										"name": "phone"
+									}
+								},
+								{
+									"id": "MyTextField8",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Mobile",
+										"anchor": "95%",
+										"autoWidth": "-ext-undefined-",
+										"name": "mobile",
+										"allowBlank": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyTextField9",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "EMail",
+										"anchor": "95%",
+										"autoWidth": "-ext-undefined-",
+										"name": "email_1",
+										"vtype": "email",
+										"regex": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyToolbar3",
+									"cid": "toolbar",
+									"jsClass": "MyToolbar1",
+									"dock": "fbar",
+									"snapToGrid": 10,
+									"cn": [
+										{
+											"id": "MyButton5",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Cancel",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "cancelbutton",
+												"hidden": "-ext-undefined-"
+											}
+										},
+										{
+											"id": "MyButton9",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Create",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "createbutton",
+												"hidden": "-ext-undefined-"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyWindow1",
+			"cid": "window",
+			"jsClass": "MandateNewWindow",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "New Mandate",
+				"width": 350,
+				"height": "-ext-undefined-",
+				"layout": "fit",
+				"autoHeight": true,
+				"titleCollapse": "-ext-undefined-",
+				"autoShow": "-ext-undefined-",
+				"buttonAlign": "-ext-undefined-",
+				"collapseFirst": "-ext-undefined-",
+				"disabled": "-ext-undefined-",
+				"collapsible": true,
+				"stateful": "-ext-undefined-",
+				"defaultButton": "-ext-undefined-",
+				"maximizable": "-ext-undefined-",
+				"minimizable": "-ext-undefined-",
+				"initHidden": false,
+				"modal": "-ext-undefined-",
+				"hideBorders": true,
+				"border": "-ext-undefined-"
+			},
+			"userXType": "mandatenewwindow",
+			"cn": [
+				{
+					"id": "MyForm1",
+					"cid": "form",
+					"jsClass": "MyForm1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"autoHeight": true,
+						"autoRef": "form",
+						"layout": "auto",
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyFieldSet3",
+							"cid": "fieldset",
+							"jsClass": "MyFieldSet",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"labelWidth": 35,
+								"layout": "-ext-undefined-",
+								"padding": "",
+								"titleCollapse": "-ext-undefined-",
+								"collapsible": "-ext-undefined-",
+								"hideCollapseTool": "-ext-undefined-",
+								"collapseFirst": "-ext-undefined-",
+								"labelAlign": "-ext-undefined-",
+								"autoHeight": true
+							},
+							"cn": [
+								{
+									"id": "MyTextField11",
+									"cid": "textfield",
+									"jsClass": "MyTextField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Title",
+										"anchor": "100%",
+										"autoWidth": "-ext-undefined-",
+										"name": "title",
+										"allowBlank": false,
+										"growMax": 100,
+										"maxLength": 50
+									}
+								},
+								{
+									"id": "MyToolbar7",
+									"cid": "toolbar",
+									"jsClass": "MyToolbar1",
+									"dock": "fbar",
+									"snapToGrid": 10,
+									"cn": [
+										{
+											"id": "MyButton8",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Cancel",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "cancelbutton",
+												"hidden": "-ext-undefined-"
+											}
+										},
+										{
+											"id": "MyButton10",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Create",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "createbutton",
+												"hidden": "-ext-undefined-"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyWindow3",
+			"cid": "window",
+			"jsClass": "CandidateFileNewWindow",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "New File",
+				"width": 400,
+				"height": "-ext-undefined-",
+				"layout": "fit",
+				"autoHeight": true,
+				"titleCollapse": "-ext-undefined-",
+				"autoShow": "-ext-undefined-",
+				"buttonAlign": "-ext-undefined-",
+				"collapseFirst": "-ext-undefined-",
+				"disabled": "-ext-undefined-",
+				"collapsible": true,
+				"stateful": "-ext-undefined-",
+				"defaultButton": "-ext-undefined-",
+				"maximizable": "-ext-undefined-",
+				"minimizable": "-ext-undefined-",
+				"initHidden": false,
+				"modal": "-ext-undefined-",
+				"hideBorders": true,
+				"border": "-ext-undefined-",
+				"maskDisabled": false
+			},
+			"userXType": "candidatefilenewwindow",
+			"cn": [
+				{
+					"id": "MyForm10",
+					"cid": "form",
+					"jsClass": "MyForm10",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"fileUpload": true,
+						"autoRef": "form",
+						"collapsible": "-ext-undefined-",
+						"collapsed": "-ext-undefined-",
+						"titleCollapse": "-ext-undefined-",
+						"hideCollapseTool": "-ext-undefined-",
+						"collapseFirst": false,
+						"autoHeight": true,
+						"width": "-ext-undefined-",
+						"labelWidth": 30
+					},
+					"cn": [
+						{
+							"id": "MyHiddenField15",
+							"cid": "hidden",
+							"jsClass": "MyHiddenField15",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Label",
+								"anchor": "100%",
+								"name": "candidate",
+								"hidden": "-ext-undefined-",
+								"autoRef": "candidate"
+							}
+						},
+						{
+							"id": "MyTextField13",
+							"cid": "textfield",
+							"jsClass": "MyTextField13",
+							"snapToGrid": 10,
+							"userConfig": {
+								"fieldLabel": "Title",
+								"anchor": "95%",
+								"msgTarget": "side",
+								"allowBlank": "-ext-undefined-",
+								"name": "title",
+								"hidden": true,
+								"hideLabel": true
+							}
+						},
+						{
+							"id": "MyToolbar8",
+							"cid": "toolbar",
+							"jsClass": "MyToolbar8",
+							"dock": "bbar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"buttonAlign": "center"
+							},
+							"cn": [
+								{
+									"id": "MyButton",
+									"cid": "button",
+									"jsClass": "MyButton",
+									"snapToGrid": 10,
+									"userConfig": {
+										"text": "Upload File",
+										"autoRef": "createbutton"
+									}
+								}
+							]
+						},
+						{
+							"id": "MyProgressBar",
+							"cid": "progress",
+							"jsClass": "MyProgressBar",
+							"snapToGrid": 10,
+							"userConfig": {
+								"value": "-ext-undefined-",
+								"autoRef": "progressbar",
+								"hidden": true
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyWindow2",
+			"cid": "window",
+			"jsClass": "MACNewWindow",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "New Event",
+				"width": 500,
+				"height": "-ext-undefined-",
+				"layout": "fit",
+				"autoHeight": true,
+				"titleCollapse": "-ext-undefined-",
+				"autoShow": "-ext-undefined-",
+				"buttonAlign": "-ext-undefined-",
+				"collapseFirst": "-ext-undefined-",
+				"disabled": "-ext-undefined-",
+				"collapsible": true,
+				"stateful": "-ext-undefined-",
+				"defaultButton": "-ext-undefined-",
+				"maximizable": "-ext-undefined-",
+				"minimizable": "-ext-undefined-",
+				"initHidden": false,
+				"modal": "-ext-undefined-",
+				"hideBorders": true,
+				"border": "-ext-undefined-"
+			},
+			"userXType": "macnewwindow",
+			"cn": [
+				{
+					"id": "MyForm5",
+					"cid": "form",
+					"jsClass": "MyForm1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "-ext-undefined-",
+						"autoHeight": true,
+						"autoRef": "form",
+						"layout": "auto",
+						"hideBorders": true
+					},
+					"cn": [
+						{
+							"id": "MyFieldSet5",
+							"cid": "fieldset",
+							"jsClass": "MyFieldSet",
+							"snapToGrid": 10,
+							"userConfig": {
+								"title": "-ext-undefined-",
+								"labelWidth": "-ext-undefined-",
+								"layout": "-ext-undefined-",
+								"padding": "",
+								"titleCollapse": "-ext-undefined-",
+								"collapsible": "-ext-undefined-",
+								"hideCollapseTool": "-ext-undefined-",
+								"collapseFirst": "-ext-undefined-",
+								"labelAlign": "-ext-undefined-",
+								"autoHeight": true
+							},
+							"cn": [
+								{
+									"id": "MyUserComponent11",
+									"cid": "usercomponent",
+									"jsClass": "CandidateComboBox",
+									"snapToGrid": 10,
+									"userConfig": {
+										"jsClass": "CandidateComboBox",
+										"userXType": "candidatecombobox",
+										"fieldLabel": "Candidate",
+										"store": "-ext-undefined-",
+										"anchor": "100%"
+									},
+									"userComponent": "MyCombo6"
+								},
+								{
+									"id": "MyUserComponent12",
+									"cid": "usercomponent",
+									"jsClass": "MandateComboBox",
+									"snapToGrid": 10,
+									"userConfig": {
+										"jsClass": "MandateComboBox",
+										"userXType": "mandatecombobox",
+										"fieldLabel": "Mandate",
+										"anchor": "100%"
+									},
+									"userComponent": "MyCombo7"
+								},
+								{
+									"id": "MyCombo4",
+									"cid": "combobox",
+									"jsClass": "MyCombo",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Activity",
+										"anchor": "100%",
+										"name": "activity__title",
+										"store": "ActivitiesStore",
+										"valueField": "id",
+										"displayField": "title",
+										"forceSelection": true,
+										"hiddenName": "activity",
+										"allowBlank": false,
+										"mode": "local",
+										"autoRef": "cbactivity",
+										"submitValue": true,
+										"clearFilterOnReset": "-ext-undefined-",
+										"triggerAction": "all",
+										"typeAhead": true,
+										"editable": "-ext-undefined-",
+										"readOnly": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyCombo5",
+									"cid": "combobox",
+									"jsClass": "MyCombo",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Status",
+										"anchor": "100%",
+										"name": "status__title",
+										"store": "MACStatusStore",
+										"valueField": "id",
+										"displayField": "title",
+										"forceSelection": true,
+										"hiddenName": "status",
+										"allowBlank": false,
+										"mode": "local",
+										"autoRef": "cbstatus",
+										"submitValue": true,
+										"clearFilterOnReset": "-ext-undefined-",
+										"triggerAction": "all",
+										"typeAhead": true,
+										"editable": "-ext-undefined-",
+										"readOnly": "-ext-undefined-"
+									}
+								},
+								{
+									"id": "MyDateField3",
+									"cid": "datefield",
+									"jsClass": "MyDateField",
+									"snapToGrid": 10,
+									"userConfig": {
+										"fieldLabel": "Date",
+										"anchor": "100%",
+										"name": "date",
+										"format": "Y-m-d"
+									}
+								},
+								{
+									"id": "MyTextArea3",
+									"cid": "textarea",
+									"jsClass": "MyTextArea",
+									"snapToGrid": 10,
+									"userConfig": {
+										"anchor": "100%",
+										"fieldLabel": "Description",
+										"name": "description",
+										"height": 163,
+										"labelStyle": "-ext-undefined-",
+										"emptyText": "description...",
+										"hideLabel": true
+									}
+								},
+								{
+									"id": "MyToolbar12",
+									"cid": "toolbar",
+									"jsClass": "MyToolbar1",
+									"dock": "fbar",
+									"snapToGrid": 10,
+									"cn": [
+										{
+											"id": "MyButton14",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Cancel",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "cancelbutton",
+												"hidden": "-ext-undefined-"
+											}
+										},
+										{
+											"id": "MyButton15",
+											"cid": "button",
+											"jsClass": "MyButton2",
+											"snapToGrid": 10,
+											"userConfig": {
+												"text": "Create",
+												"autoWidth": "-ext-undefined-",
+												"autoRef": "createbutton",
+												"hidden": "-ext-undefined-"
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyWindow4",
+			"cid": "window",
+			"jsClass": "MACEditWindow",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "Edit Event",
+				"width": 800,
+				"height": "-ext-undefined-",
+				"layout": "fit",
+				"autoHeight": true,
+				"titleCollapse": "-ext-undefined-",
+				"autoShow": "-ext-undefined-",
+				"buttonAlign": "-ext-undefined-",
+				"collapseFirst": "-ext-undefined-",
+				"disabled": "-ext-undefined-",
+				"collapsible": true,
+				"stateful": "-ext-undefined-",
+				"defaultButton": "-ext-undefined-",
+				"maximizable": "-ext-undefined-",
+				"minimizable": "-ext-undefined-",
+				"initHidden": false,
+				"modal": "-ext-undefined-",
+				"hideBorders": true,
+				"border": "-ext-undefined-"
+			},
+			"userXType": "maceditwindow",
+			"cn": [
+				{
+					"id": "MyUserComponent24",
+					"cid": "usercomponent",
+					"jsClass": "MACEditForm",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MACEditForm",
+						"userXType": "maceditform"
+					},
+					"userComponent": "MyForm4"
+				}
+			]
+		},
+		{
+			"id": "MyGridView1",
+			"cid": "gridview",
+			"jsClass": "MandateGridView",
+			"dock": "view",
+			"snapToGrid": 10,
+			"dockCls": "Ext.grid.GridView",
+			"userConfig": {
+				"forceFit": true,
+				"enableRowBody": true
+			},
+			"userXType": "mandategridview"
+		},
+		{
+			"id": "MyGridView4",
+			"cid": "gridview",
+			"jsClass": "MACGridView",
+			"dock": "view",
+			"snapToGrid": 10,
+			"dockCls": "Ext.grid.GridView",
+			"userConfig": {
+				"forceFit": true,
+				"enableRowBody": true
+			},
+			"userXType": "macgridview"
+		},
+		{
+			"id": "MyCombo6",
+			"cid": "combobox",
+			"jsClass": "CandidateComboBox",
+			"snapToGrid": 10,
+			"userConfig": {
+				"store": "CandidateComboBoxStore",
+				"valueField": "id",
+				"displayField": "id",
+				"mode": "-ext-undefined-",
+				"forceSelection": true,
+				"tpl": "<tpl for=\".\"><div class=\"x-combo-list-item\">\n<b>ID:{id}</b>\n {first_name}\n {last_name}\n</div></tpl>",
+				"typeAhead": "-ext-undefined-",
+				"hiddenName": "candidate",
+				"autoWidth": "-ext-undefined-",
+				"pageSize": 25,
+				"submitValue": true,
+				"minChars": 0,
+				"hidden": "-ext-undefined-",
+				"triggerAction": "all"
+			},
+			"userXType": "candidatecombobox"
+		},
+		{
+			"id": "MyCombo7",
+			"cid": "combobox",
+			"jsClass": "MandateComboBox",
+			"snapToGrid": 10,
+			"userConfig": {
+				"store": "MandateComboBoxStore",
+				"valueField": "id",
+				"displayField": "id",
+				"mode": "-ext-undefined-",
+				"forceSelection": true,
+				"tpl": "<tpl for=\".\"><div class=\"x-combo-list-item\">\n<b>ID:{id}</b>\n {title}\n</div></tpl>",
+				"typeAhead": "-ext-undefined-",
+				"hiddenName": "mandate",
+				"autoWidth": "-ext-undefined-",
+				"pageSize": 25,
+				"submitValue": true,
+				"minChars": 0,
+				"autoShow": "-ext-undefined-",
+				"triggerAction": "all"
+			},
+			"userXType": "mandatecombobox"
+		},
+		{
+			"id": "MyTabPanel",
+			"cid": "tabpanel",
+			"jsClass": "MainTabPanel",
+			"snapToGrid": 10,
+			"userConfig": {
+				"activeTab": 0,
+				"width": 4738,
+				"height": 28,
+				"resizeTabs": "-ext-undefined-",
+				"plain": "-ext-undefined-",
+				"unstyled": "-ext-undefined-",
+				"frame": "-ext-undefined-",
+				"footer": "-ext-undefined-",
+				"closable": "-ext-undefined-",
+				"hideBorders": true,
+				"border": false,
+				"id": "maintabpanel",
+				"deferredRender": false
+			},
+			"userXType": "maintabpanel",
+			"cn": [
+				{
+					"id": "MyUserComponent23",
+					"cid": "usercomponent",
+					"jsClass": "WebTopClass",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "WebTopClass",
+						"userXType": "webtopclass",
+						"layout": "-ext-undefined-"
+					},
+					"userComponent": "MyPanel2"
+				},
+				{
+					"id": "MyUserComponent",
+					"cid": "usercomponent",
+					"jsClass": "CandidateClass",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "CandidateClass",
+						"userXType": "candidateclass",
+						"id": "-ext-undefined-",
+						"autoRef": "candidatetab"
+					},
+					"userComponent": "MyPanel3"
+				},
+				{
+					"id": "MyUserComponent4",
+					"cid": "usercomponent",
+					"jsClass": "MandateClass",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MandateClass",
+						"userXType": "mandateclass",
+						"id": "-ext-undefined-",
+						"autoRef": "mandatetab"
+					},
+					"userComponent": "MyPanel10"
+				},
+				{
+					"id": "MyUserComponent9",
+					"cid": "usercomponent",
+					"jsClass": "MACClass",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MACClass",
+						"userXType": "macclass",
+						"id": "-ext-undefined-",
+						"autoRef": "mactab"
+					},
+					"userComponent": "MyPanel17"
+				}
+			]
+		},
+		{
+			"id": "MyGrid6",
+			"cid": "grid",
+			"jsClass": "CandidateFileGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "CandidateFileStore",
+				"autoHeight": "-ext-undefined-",
+				"autoExpandColumn": "-ext-undefined-",
+				"columnLines": "-ext-undefined-",
+				"enableColumnResize": "-ext-undefined-",
+				"border": false,
+				"hideBorders": true,
+				"viewConfig": "{ forceFit: true}",
+				"loadMask": true,
+				"stripeRows": true
+			},
+			"userXType": "candidatefilegrid",
+			"cn": [
+				{
+					"id": "MyRowSelectionModel3",
+					"cid": "gridrowselectionmodel",
+					"jsClass": "MyRowSelectionModel3",
+					"dock": "selModel",
+					"snapToGrid": 10,
+					"dockCls": "Ext.grid.RowSelectionModel",
+					"userConfig": {
+						"singleSelect": true
+					}
+				},
+				{
+					"id": "MyColumn28",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn28",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "title",
+						"header": "Title",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 300,
+						"hidden": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyColumn33",
+					"cid": "datecolumn",
+					"jsClass": "MyColumn33",
+					"snapToGrid": 10,
+					"userConfig": {
+						"dataIndex": "created_time",
+						"header": "Date",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"format": "Y-m-d",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn32",
+					"cid": "templatecolumn",
+					"jsClass": "MyColumn32",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Download",
+						"sortable": false,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"tpl": "<a href=\"{download_link}\">Download</a>",
+						"dataIndex": "download_link",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyToolbar15",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar15",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"buttonAlign": "-ext-undefined-"
+					},
+					"cn": [
+						{
+							"id": "MyButton28",
+							"cid": "button",
+							"jsClass": "MyButton28",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "New File",
+								"autoRef": "newbutton",
+								"tooltip": "Upload a new file",
+								"iconCls": "img_add"
+							}
+						},
+						{
+							"id": "MyButton29",
+							"cid": "button",
+							"jsClass": "MyButton28",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Delete File",
+								"autoRef": "deletebutton",
+								"tooltip": "Delete selected file",
+								"iconCls": "img_delete"
+							}
+						},
+						{
+							"id": "MyButton30",
+							"cid": "button",
+							"jsClass": "MyButton28",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Set Resume",
+								"autoRef": "resumebutton",
+								"tooltip": "Set resume from selected file",
+								"iconCls": "img_file"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyGrid4",
+			"cid": "grid",
+			"jsClass": "CandidateMACGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "CandidateMACsStore",
+				"columnLines": "-ext-undefined-",
+				"stripeRows": true,
+				"hideBorders": true,
+				"border": false
+			},
+			"userXType": "candidatemacgrid",
+			"cn": [
+				{
+					"id": "MyColumn38",
+					"cid": "datecolumn",
+					"jsClass": "MyColumn9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Date",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"dataIndex": "date",
+						"format": "Y-m-d",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn21",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Mandate",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "mandate",
+						"id": "mandate__title"
+					}
+				},
+				{
+					"id": "MyColumn35",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Activity",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "activity",
+						"id": "activity__title"
+					}
+				},
+				{
+					"id": "MyColumn37",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Status",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "status",
+						"id": "status__title"
+					}
+				},
+				{
+					"id": "MyColumn36",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Description",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 200,
+						"dataIndex": "description"
+					}
+				},
+				{
+					"id": "MyPagingToolbar4",
+					"cid": "pagingtoolbar",
+					"jsClass": "MyPagingToolbar4",
+					"dock": "bbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"store": "CandidateMACsStore",
+						"buttonAlign": "right",
+						"displayInfo": true
+					}
+				},
+				{
+					"id": "MyUserComponent21",
+					"cid": "usercomponent",
+					"jsClass": "CandidateMACGridView",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "CandidateMACGridView",
+						"userXType": "candidatemacgridview"
+					},
+					"userComponent": "MyGridView3"
+				},
+				{
+					"id": "MyToolbar19",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar19",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton33",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Add Event",
+								"autoRef": "newbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Add event to selected candidate",
+								"iconCls": "img_add",
+								"scale": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyButton34",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Edit Event",
+								"autoRef": "editbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Edit selected event",
+								"iconCls": "img_edit_small",
+								"scale": "-ext-undefined-"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyGrid3",
+			"cid": "grid",
+			"jsClass": "MandateMACGrid",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "-ext-undefined-",
+				"store": "MandateMACsStore",
+				"columnLines": "-ext-undefined-",
+				"stripeRows": true,
+				"minColumnWidth": "-ext-undefined-",
+				"hideBorders": true,
+				"border": false
+			},
+			"userXType": "mandatemacgrid",
+			"cn": [
+				{
+					"id": "MyColumn24",
+					"cid": "datecolumn",
+					"jsClass": "MyColumn9",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Date",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 75,
+						"dataIndex": "date",
+						"format": "Y-m-d",
+						"fixed": true
+					}
+				},
+				{
+					"id": "MyColumn26",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Activity",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "activity",
+						"id": "activity__title"
+					}
+				},
+				{
+					"id": "MyColumn25",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "First Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "candidate",
+						"id": "candidate__first_name"
+					}
+				},
+				{
+					"id": "MyColumn39",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Last Name",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "candidate",
+						"id": "candidate__last_name"
+					}
+				},
+				{
+					"id": "MyColumn27",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Status",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 100,
+						"dataIndex": "status",
+						"id": "status__title"
+					}
+				},
+				{
+					"id": "MyColumn40",
+					"cid": "gridcolumn",
+					"jsClass": "MyColumn4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"header": "Description",
+						"sortable": true,
+						"resizable": "-ext-undefined-",
+						"width": 200,
+						"dataIndex": "description"
+					}
+				},
+				{
+					"id": "MyPagingToolbar1",
+					"cid": "pagingtoolbar",
+					"jsClass": "MyPagingToolbar4",
+					"dock": "bbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"store": "MandateMACsStore",
+						"buttonAlign": "right",
+						"displayInfo": true
+					}
+				},
+				{
+					"id": "MyUserComponent22",
+					"cid": "usercomponent",
+					"jsClass": "MandateMACGridView",
+					"snapToGrid": 10,
+					"userConfig": {
+						"jsClass": "MandateMACGridView",
+						"userXType": "mandatemacgridview"
+					},
+					"userComponent": "MyGridView2"
+				},
+				{
+					"id": "MyToolbar21",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar19",
+					"dock": "tbar",
+					"snapToGrid": 10,
+					"cn": [
+						{
+							"id": "MyButton37",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Add Event",
+								"autoRef": "newbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Add event to selected candidate",
+								"iconCls": "img_add",
+								"scale": "-ext-undefined-"
+							}
+						},
+						{
+							"id": "MyButton38",
+							"cid": "button",
+							"jsClass": "MyButton1",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Edit Event",
+								"autoRef": "editbutton",
+								"tooltipType": "-ext-undefined-",
+								"tooltip": "Edit selected event",
+								"iconCls": "img_edit_small",
+								"scale": "-ext-undefined-"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MyGridView3",
+			"cid": "gridview",
+			"jsClass": "CandidateMACGridView",
+			"dock": "view",
+			"snapToGrid": 10,
+			"dockCls": "Ext.grid.GridView",
+			"userConfig": {
+				"forceFit": true
+			},
+			"userXType": "candidatemacgridview"
+		},
+		{
+			"id": "MyGridView2",
+			"cid": "gridview",
+			"jsClass": "MandateMACGridView",
+			"dock": "view",
+			"snapToGrid": 10,
+			"dockCls": "Ext.grid.GridView",
+			"userConfig": {
+				"forceFit": true,
+				"enableRowBody": "-ext-undefined-"
+			},
+			"userXType": "mandatemacgridview"
+		},
+		{
+			"id": "MyPanel2",
+			"cid": "panel",
+			"jsClass": "WebTopClass",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "WebTop",
+				"hideBorders": "-ext-undefined-",
+				"layout": "border",
+				"height": "-ext-undefined-",
+				"header": true,
+				"autoHeight": "-ext-undefined-",
+				"autoWidth": true,
+				"width": "-ext-undefined-",
+				"collapsible": "-ext-undefined-",
+				"forceLayout": "-ext-undefined-",
+				"border": false,
+				"autoScroll": true,
+				"tpl": "Coming soon!!!\n"
+			},
+			"userXType": "webtopclass",
+			"cn": [
+				{
+					"id": "MyPanel23",
+					"cid": "panel",
+					"jsClass": "MyPanel23",
+					"snapToGrid": 10,
+					"userConfig": {
+						"title": "Coming soon!!!",
+						"region": "center",
+						"tpl": "-ext-undefined-"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyForm11",
+			"cid": "form",
+			"jsClass": "MACFilterPanel",
+			"snapToGrid": 10,
+			"userConfig": {
+				"title": "Filters",
+				"labelAlign": "top",
+				"layout": "-ext-undefined-",
+				"padding": "5 5 5 5 ",
+				"autoHeight": "-ext-undefined-",
+				"border": false,
+				"hideBorders": "-ext-undefined-",
+				"collapsible": "-ext-undefined-",
+				"autoScroll": true
+			},
+			"userXType": "macfilterpanel",
+			"cn": [
+				{
+					"id": "MyTextArea",
+					"cid": "textarea",
+					"jsClass": "MyTextArea",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"fieldLabel": "Description",
+						"anchor": "90%",
+						"autoRef": "description"
+					}
+				},
+				{
+					"id": "MyToolbar22",
+					"cid": "toolbar",
+					"jsClass": "MyToolbar22",
+					"dock": "fbar",
+					"snapToGrid": 10,
+					"userConfig": {
+						"buttonAlign": "center"
+					},
+					"cn": [
+						{
+							"id": "MyButton40",
+							"cid": "button",
+							"jsClass": "MyButton40",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Reset",
+								"autoRef": "resetbutton"
+							}
+						},
+						{
+							"id": "MyButton39",
+							"cid": "button",
+							"jsClass": "MyButton39",
+							"snapToGrid": 10,
+							"userConfig": {
+								"text": "Apply",
+								"autoRef": "applybutton"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"stores": [
+		{
+			"id": "MyStore",
+			"cid": "jsonstore",
+			"jsClass": "CandidateStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "CandidateStore",
+				"root": "results",
+				"url": "/ats/main/candidate/list/",
+				"autoLoad": "-ext-undefined-",
+				"baseParams": "{start:\"0\", limit:\"15\"}",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "candidatestore",
+			"cn": [
+				{
+					"id": "MyField",
+					"cid": "datafield",
+					"jsClass": "MyField",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField1",
+					"cid": "datafield",
+					"jsClass": "MyField1",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "first_name",
+						"mapping": "fields[\"first_name\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField2",
+					"cid": "datafield",
+					"jsClass": "MyField2",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by__username",
+						"mapping": "fields[\"created_by\"][\"fields\"][\"username\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField55",
+					"cid": "datafield",
+					"jsClass": "MyField2",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "updated_by__username",
+						"mapping": "fields[\"updated_by\"][\"fields\"][\"username\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField3",
+					"cid": "datafield",
+					"jsClass": "MyField3",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "last_name",
+						"mapping": "fields[\"last_name\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField4",
+					"cid": "datafield",
+					"jsClass": "MyField4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "phone",
+						"mapping": "fields[\"phone\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField90",
+					"cid": "datafield",
+					"jsClass": "MyField4",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "phone_extension",
+						"mapping": "fields[\"phone_extension\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField5",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mobile",
+						"mapping": "fields[\"mobile\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField6",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "email_1",
+						"mapping": "fields[\"email_1\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField54",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "email_2",
+						"mapping": "fields[\"email_2\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField58",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "address",
+						"mapping": "fields[\"address\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField59",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "city",
+						"mapping": "fields[\"city\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField60",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "state",
+						"mapping": "fields[\"state\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField61",
+					"cid": "datafield",
+					"jsClass": "MyField5",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "postal_code",
+						"mapping": "fields[\"postal_code\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField56",
+					"cid": "datafield",
+					"jsClass": "MyField56",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "professional_designations",
+						"mapping": "fields[\"professional_designations\"]"
+					}
+				},
+				{
+					"id": "MyField57",
+					"cid": "datafield",
+					"jsClass": "MyField57",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "managment_experience",
+						"mapping": "fields[\"managment_experience\"]"
+					}
+				},
+				{
+					"id": "MyField62",
+					"cid": "datafield",
+					"jsClass": "MyField62",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "work_locations",
+						"mapping": "fields[\"work_locations\"]"
+					}
+				},
+				{
+					"id": "MyField63",
+					"cid": "datafield",
+					"jsClass": "MyField63",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "work_types",
+						"mapping": "fields[\"work_types\"]"
+					}
+				},
+				{
+					"id": "MyField72",
+					"cid": "datafield",
+					"jsClass": "MyField63",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "salary",
+						"mapping": "fields[\"salary\"]"
+					}
+				},
+				{
+					"id": "MyField87",
+					"cid": "datafield",
+					"jsClass": "MyField63",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "keywords",
+						"mapping": "fields[\"keywords\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField91",
+					"cid": "datafield",
+					"jsClass": "MyField63",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "employer",
+						"mapping": "fields[\"employer\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField86",
+					"cid": "datafield",
+					"jsClass": "MyField86",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "resume",
+						"type": "string",
+						"mapping": "fields[\"resume\"]",
+						"defaultValue": ""
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore1",
+			"cid": "jsonstore",
+			"jsClass": "ActivitiesStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "ActivitiesStore",
+				"url": "/ats/static/activity/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "activitiesstore",
+			"cn": [
+				{
+					"id": "MyField7",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField8",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore2",
+			"cid": "jsonstore",
+			"jsClass": "MACStatusStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStatusStore",
+				"url": "/ats/static/mac/status/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"autoSave": false
+			},
+			"userXType": "macstatusstore",
+			"cn": [
+				{
+					"id": "MyField9",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField10",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore16",
+			"cid": "jsonstore",
+			"jsClass": "MandateStatusStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateStatusStore",
+				"url": "/ats/static/mandate/status/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"autoSave": false
+			},
+			"userXType": "mandatestatusstore",
+			"cn": [
+				{
+					"id": "MyField88",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField89",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore10",
+			"cid": "jsonstore",
+			"jsClass": "HiringManagerStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "HiringManagerStore",
+				"url": "/ats/static/hiring_manager/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "hiringmanagerstore",
+			"cn": [
+				{
+					"id": "MyField47",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField52",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "name",
+						"mapping": "fields[\"name\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore4",
+			"cid": "jsonstore",
+			"jsClass": "MandateStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateStore",
+				"root": "results",
+				"url": "/ats/main/mandate/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "mandatestore",
+			"cn": [
+				{
+					"id": "MyField18",
+					"cid": "datafield",
+					"jsClass": "MyField18",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField19",
+					"cid": "datafield",
+					"jsClass": "MyField19",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField12",
+					"cid": "datafield",
+					"jsClass": "MyField12",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "posting_end_date",
+						"mapping": "fields[\"posting_end_date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField11",
+					"cid": "datafield",
+					"jsClass": "MyField12",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "posting_start_date",
+						"mapping": "fields[\"posting_start_date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField14",
+					"cid": "datafield",
+					"jsClass": "MyField14",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by__username",
+						"mapping": "fields[\"created_by\"][\"fields\"][\"username\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField15",
+					"cid": "datafield",
+					"jsClass": "MyField15",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "responsability",
+						"mapping": "fields[\"responsability\"]"
+					}
+				},
+				{
+					"id": "MyField13",
+					"cid": "datafield",
+					"jsClass": "MyField15",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "requirement",
+						"mapping": "fields[\"requirement\"]"
+					}
+				},
+				{
+					"id": "MyField16",
+					"cid": "datafield",
+					"jsClass": "MyField16",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"type": "-ext-undefined-",
+						"mapping": "fields[\"status\"]"
+					}
+				},
+				{
+					"id": "MyField53",
+					"cid": "datafield",
+					"jsClass": "MyField16",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "hiring_manager",
+						"type": "-ext-undefined-",
+						"mapping": "fields[\"hiring_manager\"]"
+					}
+				},
+				{
+					"id": "MyField36",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate_count",
+						"mapping": "extras[\"candidate_count\"]",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField73",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "posting_number",
+						"mapping": "fields[\"posting_number\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField74",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "confidential",
+						"mapping": "fields[\"confidential\"]",
+						"type": "boolean"
+					}
+				},
+				{
+					"id": "MyField75",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "city",
+						"mapping": "fields[\"city\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField76",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate_source",
+						"mapping": "fields[\"candidate_source\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField77",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "consulting_time",
+						"mapping": "fields[\"consulting_time\"]",
+						"type": "float"
+					}
+				},
+				{
+					"id": "MyField78",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "posting_sources",
+						"mapping": "fields[\"posting_sources\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField79",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "comments",
+						"mapping": "fields[\"comments\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField80",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "start_date",
+						"mapping": "fields[\"start_date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField81",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "end_date",
+						"mapping": "fields[\"end_date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField82",
+					"cid": "datafield",
+					"jsClass": "MyField36",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "hired_number",
+						"mapping": "fields[\"hired_number\"]",
+						"type": "int",
+						"dateFormat": "-ext-undefined-"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore3",
+			"cid": "jsonstore",
+			"jsClass": "MACStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStore",
+				"root": "results",
+				"url": "/ats/main/mac/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "macstore",
+			"cn": [
+				{
+					"id": "MyField17",
+					"cid": "datafield",
+					"jsClass": "MyField17",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField20",
+					"cid": "datafield",
+					"jsClass": "MyField20",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate",
+						"mapping": "fields[\"candidate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField28",
+					"cid": "datafield",
+					"jsClass": "MyField22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mandate",
+						"mapping": "fields[\"mandate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField23",
+					"cid": "datafield",
+					"jsClass": "MyField23",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField30",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField29",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField26",
+					"cid": "datafield",
+					"jsClass": "MyField26",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by",
+						"mapping": "fields[\"created_by\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField27",
+					"cid": "datafield",
+					"jsClass": "MyField27",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore17",
+			"cid": "jsonstore",
+			"jsClass": "MACFutureStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStore",
+				"root": "results",
+				"url": "/ats/main/mac/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "macfuturestore",
+			"cn": [
+				{
+					"id": "MyField21",
+					"cid": "datafield",
+					"jsClass": "MyField17",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField22",
+					"cid": "datafield",
+					"jsClass": "MyField20",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate",
+						"mapping": "fields[\"candidate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField24",
+					"cid": "datafield",
+					"jsClass": "MyField22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mandate",
+						"mapping": "fields[\"mandate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField25",
+					"cid": "datafield",
+					"jsClass": "MyField23",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField37",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField93",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField94",
+					"cid": "datafield",
+					"jsClass": "MyField26",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by",
+						"mapping": "fields[\"created_by\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField95",
+					"cid": "datafield",
+					"jsClass": "MyField27",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore18",
+			"cid": "jsonstore",
+			"jsClass": "MACPresentStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStore",
+				"root": "results",
+				"url": "/ats/main/mac/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "macpresentstore",
+			"cn": [
+				{
+					"id": "MyField96",
+					"cid": "datafield",
+					"jsClass": "MyField17",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField98",
+					"cid": "datafield",
+					"jsClass": "MyField20",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate",
+						"mapping": "fields[\"candidate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField99",
+					"cid": "datafield",
+					"jsClass": "MyField22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mandate",
+						"mapping": "fields[\"mandate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField100",
+					"cid": "datafield",
+					"jsClass": "MyField23",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField101",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField102",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField103",
+					"cid": "datafield",
+					"jsClass": "MyField26",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by",
+						"mapping": "fields[\"created_by\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField104",
+					"cid": "datafield",
+					"jsClass": "MyField27",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore19",
+			"cid": "jsonstore",
+			"jsClass": "MACPastStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStore",
+				"root": "results",
+				"url": "/ats/main/mac/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "macapststore",
+			"cn": [
+				{
+					"id": "MyField105",
+					"cid": "datafield",
+					"jsClass": "MyField17",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField106",
+					"cid": "datafield",
+					"jsClass": "MyField20",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate",
+						"mapping": "fields[\"candidate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField107",
+					"cid": "datafield",
+					"jsClass": "MyField22",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mandate",
+						"mapping": "fields[\"mandate\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField108",
+					"cid": "datafield",
+					"jsClass": "MyField23",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date",
+						"dateFormat": "Y-m-d"
+					}
+				},
+				{
+					"id": "MyField109",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField110",
+					"cid": "datafield",
+					"jsClass": "MyField24",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField111",
+					"cid": "datafield",
+					"jsClass": "MyField26",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_by",
+						"mapping": "fields[\"created_by\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField112",
+					"cid": "datafield",
+					"jsClass": "MyField27",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore5",
+			"cid": "jsonstore",
+			"jsClass": "CandidateComboBoxStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "CandidateComboBoxStore",
+				"url": "/ats/main/candidate/list/combobox/",
+				"autoLoad": "-ext-undefined-",
+				"root": "results",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "candidatecomboboxstore",
+			"cn": [
+				{
+					"id": "MyField31",
+					"cid": "datafield",
+					"jsClass": "MyField31",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField32",
+					"cid": "datafield",
+					"jsClass": "MyField32",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "first_name",
+						"type": "string",
+						"mapping": "fields[\"first_name\"]"
+					}
+				},
+				{
+					"id": "MyField33",
+					"cid": "datafield",
+					"jsClass": "MyField33",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "last_name",
+						"type": "string",
+						"mapping": "fields[\"last_name\"]"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore9",
+			"cid": "jsonstore",
+			"jsClass": "MandateCandidatesStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateCandidatesStore",
+				"url": "/ats/main/candidate/list/",
+				"autoLoad": "-ext-undefined-",
+				"root": "results",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "mandatecandidatesstore",
+			"cn": [
+				{
+					"id": "MyField48",
+					"cid": "datafield",
+					"jsClass": "MyField31",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField49",
+					"cid": "datafield",
+					"jsClass": "MyField32",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "first_name",
+						"type": "string",
+						"mapping": "fields[\"first_name\"]"
+					}
+				},
+				{
+					"id": "MyField50",
+					"cid": "datafield",
+					"jsClass": "MyField33",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "last_name",
+						"type": "string",
+						"mapping": "fields[\"last_name\"]"
+					}
+				},
+				{
+					"id": "MyField51",
+					"cid": "datafield",
+					"jsClass": "MyField51",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "phone",
+						"type": "string",
+						"mapping": "fields[\"phone\"]"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore6",
+			"cid": "jsonstore",
+			"jsClass": "MandateComboBoxStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateComboBoxStore",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"url": "/ats/main/mandate/list/combobox/",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "mandatecomboboxstore",
+			"cn": [
+				{
+					"id": "MyField34",
+					"cid": "datafield",
+					"jsClass": "MyField34",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField35",
+					"cid": "datafield",
+					"jsClass": "MyField35",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore7",
+			"cid": "jsonstore",
+			"jsClass": "CandidateMACsStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "CandidateMACsStore",
+				"url": "/ats/main/mac/list/",
+				"root": "results",
+				"baseParams": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "candidatemacsstore",
+			"cn": [
+				{
+					"id": "MyField38",
+					"cid": "datafield",
+					"jsClass": "MyField38",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "mandate",
+						"type": "-ext-undefined-",
+						"mapping": "fields[\"mandate\"]"
+					}
+				},
+				{
+					"id": "MyField39",
+					"cid": "datafield",
+					"jsClass": "MyField39",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField40",
+					"cid": "datafield",
+					"jsClass": "MyField40",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]",
+						"defaultValue": ""
+					}
+				},
+				{
+					"id": "MyField41",
+					"cid": "datafield",
+					"jsClass": "MyField41",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date"
+					}
+				},
+				{
+					"id": "MyField92",
+					"cid": "datafield",
+					"jsClass": "MyField41",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField113",
+					"cid": "datafield",
+					"jsClass": "MyField113",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore8",
+			"cid": "jsonstore",
+			"jsClass": "MandateMACsStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateMACsStore",
+				"url": "/ats/main/mac/list/",
+				"root": "results",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"remoteSort": true
+			},
+			"userXType": "mandatemacsstore",
+			"cn": [
+				{
+					"id": "MyField43",
+					"cid": "datafield",
+					"jsClass": "MyField38",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "candidate",
+						"type": "-ext-undefined-",
+						"mapping": "fields[\"candidate\"]"
+					}
+				},
+				{
+					"id": "MyField44",
+					"cid": "datafield",
+					"jsClass": "MyField39",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "activity",
+						"mapping": "fields[\"activity\"]",
+						"type": "-ext-undefined-"
+					}
+				},
+				{
+					"id": "MyField45",
+					"cid": "datafield",
+					"jsClass": "MyField40",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "status",
+						"mapping": "fields[\"status\"]"
+					}
+				},
+				{
+					"id": "MyField46",
+					"cid": "datafield",
+					"jsClass": "MyField41",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "date",
+						"mapping": "fields[\"date\"]",
+						"type": "date"
+					}
+				},
+				{
+					"id": "MyField97",
+					"cid": "datafield",
+					"jsClass": "MyField97",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "description",
+						"mapping": "fields[\"description\"]"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore11",
+			"cid": "jsonstore",
+			"jsClass": "ProfessionalDesignationStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "ProfessionalDesignationStore",
+				"root": "results",
+				"url": "/ats/static/professional_designation/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "professionaldesignationstore",
+			"cn": [
+				{
+					"id": "MyField64",
+					"cid": "datafield",
+					"jsClass": "MyField64",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField65",
+					"cid": "datafield",
+					"jsClass": "MyField65",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore12",
+			"cid": "jsonstore",
+			"jsClass": "WorkTypeStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "WorkTypeStore",
+				"root": "results",
+				"url": "/ats/static/work_type/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "worktypestore",
+			"cn": [
+				{
+					"id": "MyField66",
+					"cid": "datafield",
+					"jsClass": "MyField64",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField67",
+					"cid": "datafield",
+					"jsClass": "MyField65",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore13",
+			"cid": "jsonstore",
+			"jsClass": "WorkLocationStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "WorkLocationStore",
+				"root": "results",
+				"url": "/ats/static/work_location/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "worklocationstore",
+			"cn": [
+				{
+					"id": "MyField68",
+					"cid": "datafield",
+					"jsClass": "MyField64",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField69",
+					"cid": "datafield",
+					"jsClass": "MyField65",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore14",
+			"cid": "jsonstore",
+			"jsClass": "ManagmentExperienceStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "ManagmentExperienceStore",
+				"root": "results",
+				"url": "/ats/static/managment_experience/list/",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "managmentexperiencestore",
+			"cn": [
+				{
+					"id": "MyField70",
+					"cid": "datafield",
+					"jsClass": "MyField64",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"mapping": "pk",
+						"type": "int"
+					}
+				},
+				{
+					"id": "MyField71",
+					"cid": "datafield",
+					"jsClass": "MyField65",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore15",
+			"cid": "jsonstore",
+			"jsClass": "CandidateFileStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "CandidateFileStore",
+				"url": "/ats/main/candidatefile/list/",
+				"root": "results",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "candidatefilestore",
+			"cn": [
+				{
+					"id": "MyField42",
+					"cid": "datafield",
+					"jsClass": "MyField42",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields['title']",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField83",
+					"cid": "datafield",
+					"jsClass": "MyField42",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "download_link",
+						"mapping": "extras['download_link']",
+						"type": "string"
+					}
+				},
+				{
+					"id": "MyField84",
+					"cid": "datafield",
+					"jsClass": "MyField84",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "created_time",
+						"type": "date",
+						"dateFormat": "Y-m-d h:m:s",
+						"mapping": "fields[\"created_time\"]"
+					}
+				},
+				{
+					"id": "MyField85",
+					"cid": "datafield",
+					"jsClass": "MyField85",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				}
+			]
+		}
+	]
+}

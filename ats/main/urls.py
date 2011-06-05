@@ -1,0 +1,22 @@
+from django.conf.urls.defaults import *
+
+urlpatterns = patterns('',
+    (r'^$', 'ats.main.views.index'),
+    (r'^candidate/list/$', 'ats.main.views.candidate_list'),
+    (r'^candidate/list/combobox/$', 'ats.main.views.candidate_list_combobox'),
+    (r'^candidate/new/$', 'ats.main.views.candidate_new'),
+    (r'^candidate/update/(?P<form_type>personal)/$', 'ats.main.views.candidate_update'),
+    (r'^candidate/update/(?P<form_type>experience)/$', 'ats.main.views.candidate_update'),
+    (r'^mandate/list/$', 'ats.main.views.mandate_list'),
+    (r'^mandate/list/combobox/$', 'ats.main.views.mandate_list_combobox'),
+    (r'^mandate/new/$', 'ats.main.views.mandate_new'),
+    (r'^mandate/update/$', 'ats.main.views.mandate_update'),
+    (r'^mac/list/$', 'ats.main.views.mac_list'),
+    (r'^mac/new/$', 'ats.main.views.mac_new'),
+    (r'^mac/update/$', 'ats.main.views.mac_update'),
+    (r'^data/candidate/(?P<candidate>\d+)/(?P<filename>.+)$', 'ats.main.views.candidatefile_get'),
+    (r'^candidatefile/new/$', 'ats.main.views.candidatefile_new'),
+    (r'^candidatefile/del/$', 'ats.main.views.candidatefile_del'),
+    (r'^candidatefile/list/$', 'ats.main.views.candidatefile_list'),
+    (r'^candidatefile/resume/$', 'ats.main.views.candidatefile_resume'),
+   )

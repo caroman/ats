@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.worklocation",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Work location 1"
+    }
+  },
+  {
+    "model": "main.worklocation",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Work location 2"
+    }
+  }
+]
+

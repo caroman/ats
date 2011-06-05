@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>ATS</title>
+<link href="/ats/media/ats/dep/ats/css/index.css" rel="stylesheet" type="text/css">
+</head> 
+
+<body onload="self.focus();document.main.username.focus()" >
+<center> 
+<div id="mainbox">
+	<div id="loginfo">
+		<p style="font-weight: bold;">ATS version 0.3</p>
+		<font color="red">&nbsp;</font>
+                {% if form.errors %}"Wrong user or password:"{% endif %}
+		<form name="main"  method="post" 
+                      action="?next={{ next|default:"/ats/main/" }}">
+          {% csrf_token %}
+		  <div id="formrow">
+		    <span class="logtxt">Usuario:</span>
+		    <input class="logbox" name="username" value="" type="text">
+		  </div>
+		  <div id="formrow">
+		    <span class="logtxt">Password:</span>
+		    <input class="logbox" name="password" value="" type="password">
+		  </div>
+		  <div id="formrow">
+		    <center><input name="submit" src="/ats/media/ats/dep/ats/img/login.png" 
+                                   alt="Log In" border="0" type="image"></center>
+		  </div>
+		</form>
+	</div>
+</div>
+
+<p style="font-weight: bold;">Contact <a href="mailto:admin@init5.cl">admin@init5.cl</a> </p>	
+
+
+<div id="copy">
+Copyright @ 2010
+</div>
+
+
+</center>
+</body>
+</html>

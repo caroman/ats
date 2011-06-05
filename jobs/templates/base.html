@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>{% block title %}Welcome to IRGT{% endblock %}</title>
+  <link rel="stylesheet" href="/jobs/media/jobs/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/jobs/media/jobs/css/tableless.css" />
+  {% block css %}{% endblock %}
+  {% block js %}{% endblock %}
+</head>
+
+<body {% block onload %}{% endblock %} >
+
+  <div id="page-container">
+
+    <div class="meta">
+        <div class="metalinks">
+            <a href="#"><img src="/jobs/media/jobs/images/meta1.gif" alt="" width="15" height="14" /></a>
+            <a href="#"><img src="/jobs/media/jobs/images/meta2.gif" alt="" width="17" height="14" /></a>
+            <a href="#"><img src="/jobs/media/jobs/images/meta3.gif" alt="" width="17" height="14" /></a>
+            <a href="#"><img src="/jobs/media/jobs/images/meta4.gif" alt="" width="15" height="14" /></a>
+        </div>
+        <p>
+              {% if user.is_authenticated %}
+                  {{ user.username }} <a href="{% url auth_logout %}">Logout</a>
+              {% else %}
+                  <a href="{% url auth_login %}">Login</a>
+              {% endif %}
+        </p>
+    </div>
+
+    <div id="header">
+        <a href="index.html" class="logo"><img src="/jobs/media/jobs/images/logo.jpg" alt="setalpm" width="149" height="28" /></a>
+        <span class="slogan">Your Key to Success</span>
+        <ul id="menu">
+            {% if user.is_authenticated %}
+            <li><a href="/jobs/">Home</a></li>
+            <li><a href="/jobs/accounts/profile/">My Profile</a></li>
+            <li><a href="/jobs/user/applications/">My Applications</a></li>
+            <li class="last"><a href="/jobs/user/files/">My Files</a></li>
+
+            {% else %}
+            <li><a href="/jobs/">Home</a></li>
+            <li><a href="#">Our Career</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="last"><a href="{% url registration_register %}">Register</a></li>
+            {% endif %}
+
+        </ul>
+   </div>
+
+   <div id="content">
+        {% block search %} {% endblock %}
+        {% block content %}{% endblock %}
+        <div class="contentmiddle" style="height:40px"></div>
+        <div id="blocks">
+          <div class="block">{% block block1 %}{% endblock %}</div>
+          <div class="block">{% block block2 %}{% endblock %}</div>
+          <div class="block">{% block block3 %}{% endblock %}</div>
+          <div class="block">{% block block4 %}{% endblock %}</div>
+        </div>
+        <div id="info">
+          <div>{% block info1 %}{% endblock %}</div>
+          <div>{% block info2 %}{% endblock %}</div>
+          <div>{% block info3 %}{% endblock %}</div>
+          <div>{% block info4 %}{% endblock %}</div>
+        </div>
+  </div>
+
+  <div id="menu">
+    {% block filter %}{% endblock %}
+  </div>
+  
+  <div id="footer">
+		Copyright &copy; IRGT Inc. 2011. Design by <a href="http://www.bestfreetemplates.info" target="_blank" title="Free CSS templates">BFT</a>.
+  </div> 
+</div>
+
+</body>
+</html>

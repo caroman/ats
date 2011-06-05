@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.managmentexperience",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Managment experience 1"
+    }
+  },
+  {
+    "model": "main.managmentexperience",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Managment experience 2"
+    }
+  }
+]
+

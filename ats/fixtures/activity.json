@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.activity",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Activity 1"
+    }
+  },
+  {
+    "model": "main.activity",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Activity 2"
+    }
+  }
+]
+

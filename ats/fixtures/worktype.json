@@ -1,0 +1,19 @@
+[
+  {
+    "model": "main.worktype",
+    "pk": 1,
+    "fields": {
+      "priority": "1",
+      "title": "Work type 1"
+    }
+  },
+  {
+    "model": "main.worktype",
+    "pk": 2,
+    "fields": {
+      "priority": "2",
+      "title": "Work type 2"
+    }
+  }
+]
+

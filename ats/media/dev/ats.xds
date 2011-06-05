@@ -800,13 +800,14 @@
 						"hideBorders": true,
 						"border": "-ext-undefined-",
 						"split": true,
-						"autoRef": "optionpanel"
+						"autoRef": "optionpanel",
+						"collapsed": true
 					},
 					"cn": [
 						{
 							"id": "MyUserComponent25",
 							"cid": "usercomponent",
-							"jsClass": "CandidateFilterPanel",
+							"jsClass": "MACFilterPanel",
 							"snapToGrid": 10,
 							"userConfig": {
 								"jsClass": "MACFilterPanel",

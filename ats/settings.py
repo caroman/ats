@@ -92,7 +92,6 @@ ROOT_URLCONF = 'ats.urls'
 TEMPLATE_DIRS = (
      SITE_ROOT
     ,os.path.join( SITE_ROOT, '/templates' )
-    #,'/django/rrhh/trunk/ats'
 )
 
 SERIALIZATION_MODULES = {

@@ -234,10 +234,16 @@
         file: 'pkg/ats-store.js',
         isDebug: true,
         fileIncludes: [ {
-            text: 'ActivitiesStore.js',
+            text: 'ActivityStore.js',
+            path: ''
+        },{
+            text: 'MACActivityFilterStore.js',
             path: ''
         },{
             text: 'MACStatusStore.js',
+            path: ''
+        },{
+            text: 'MACStatusFilterStore.js',
             path: ''
         },{
             text: 'MandateStatusStore.js',
@@ -250,6 +256,9 @@
             path: ''
         },{
             text: 'CandidateComboBoxStore.js',
+            path: ''
+        },{
+            text: 'CandidateComboBoxFilterStore.js',
             path: ''
         },{
             text: 'CandidateMACsStore.js',
@@ -265,6 +274,9 @@
             path: ''
         },{
             text: 'MandateComboBoxStore.js',
+            path: ''
+        },{
+            text: 'MandateComboBoxFilterStore.js',
             path: ''
         },{
             text: 'MandateMACsStore.js',

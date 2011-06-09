@@ -2354,7 +2354,7 @@
 							"snapToGrid": 10,
 							"userConfig": {
 								"name": "activity",
-								"store": "ActivitiesStore",
+								"store": "ActivityStore",
 								"valueField": "id",
 								"displayField": "title",
 								"forceSelection": true,
@@ -3812,7 +3812,7 @@
 										"fieldLabel": "Activity",
 										"anchor": "100%",
 										"name": "activity__title",
-										"store": "ActivitiesStore",
+										"store": "ActivityStore",
 										"valueField": "id",
 										"displayField": "title",
 										"forceSelection": true,
@@ -4927,17 +4927,17 @@
 		{
 			"id": "MyStore1",
 			"cid": "jsonstore",
-			"jsClass": "ActivitiesStore",
+			"jsClass": "MACActivityFilterStore",
 			"snapToGrid": 10,
 			"userConfig": {
-				"storeId": "ActivitiesStore",
+				"storeId": "MACActivityFilterStore",
 				"url": "/ats/static/activity/list/",
 				"root": "results",
 				"autoLoad": "-ext-undefined-",
 				"restful": true,
 				"batch": "-ext-undefined-"
 			},
-			"userXType": "activitiesstore",
+			"userXType": "macactivityfilterstore",
 			"cn": [
 				{
 					"id": "MyField7",
@@ -4964,7 +4964,86 @@
 			]
 		},
 		{
+			"id": "MyStore7",
+			"cid": "jsonstore",
+			"jsClass": "ActivityStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "ActivityStore",
+				"url": "/ats/static/activity/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "activitystore",
+			"cn": [
+				{
+					"id": "MyField38",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField39",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
 			"id": "MyStore2",
+			"cid": "jsonstore",
+			"jsClass": "MACStatusFilterStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MACStatusFilterStore",
+				"url": "/ats/static/mac/status/list/",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"restful": true,
+				"batch": "-ext-undefined-",
+				"autoSave": false
+			},
+			"userXType": "macstatusfilterstore",
+			"cn": [
+				{
+					"id": "MyField9",
+					"cid": "datafield",
+					"jsClass": "MyField7",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField10",
+					"cid": "datafield",
+					"jsClass": "MyField8",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore21",
 			"cid": "jsonstore",
 			"jsClass": "MACStatusStore",
 			"snapToGrid": 10,
@@ -4980,7 +5059,7 @@
 			"userXType": "macstatusstore",
 			"cn": [
 				{
-					"id": "MyField9",
+					"id": "MyField40",
 					"cid": "datafield",
 					"jsClass": "MyField7",
 					"snapToGrid": 10,
@@ -4991,7 +5070,7 @@
 					}
 				},
 				{
-					"id": "MyField10",
+					"id": "MyField41",
 					"cid": "datafield",
 					"jsClass": "MyField8",
 					"snapToGrid": 10,
@@ -5751,17 +5830,17 @@
 		{
 			"id": "MyStore5",
 			"cid": "jsonstore",
-			"jsClass": "CandidateComboBoxStore",
+			"jsClass": "CandidateComboBoxFilterStore",
 			"snapToGrid": 10,
 			"userConfig": {
-				"storeId": "CandidateComboBoxStore",
+				"storeId": "CandidateComboBoxFilterStore",
 				"url": "/ats/main/candidate/list/combobox/",
 				"autoLoad": "-ext-undefined-",
 				"root": "results",
 				"restful": true,
 				"batch": "-ext-undefined-"
 			},
-			"userXType": "candidatecomboboxstore",
+			"userXType": "candidatecomboboxfilterstore",
 			"cn": [
 				{
 					"id": "MyField31",
@@ -5787,6 +5866,56 @@
 				},
 				{
 					"id": "MyField33",
+					"cid": "datafield",
+					"jsClass": "MyField33",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "last_name",
+						"type": "string",
+						"mapping": "fields[\"last_name\"]"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore22",
+			"cid": "jsonstore",
+			"jsClass": "CandidateComboBoxStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "CandidateComboBoxStore",
+				"url": "/ats/main/candidate/list/combobox/",
+				"autoLoad": "-ext-undefined-",
+				"root": "results",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "candidatecomboboxstore",
+			"cn": [
+				{
+					"id": "MyField92",
+					"cid": "datafield",
+					"jsClass": "MyField31",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField113",
+					"cid": "datafield",
+					"jsClass": "MyField32",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "first_name",
+						"type": "string",
+						"mapping": "fields[\"first_name\"]"
+					}
+				},
+				{
+					"id": "MyField120",
 					"cid": "datafield",
 					"jsClass": "MyField33",
 					"snapToGrid": 10,
@@ -5863,17 +5992,17 @@
 		{
 			"id": "MyStore6",
 			"cid": "jsonstore",
-			"jsClass": "MandateComboBoxStore",
+			"jsClass": "MandateComboBoxFilterStore",
 			"snapToGrid": 10,
 			"userConfig": {
-				"storeId": "MandateComboBoxStore",
+				"storeId": "MandateComboBoxFilterStore",
 				"root": "results",
 				"autoLoad": "-ext-undefined-",
 				"url": "/ats/main/mandate/list/combobox/",
 				"restful": true,
 				"batch": "-ext-undefined-"
 			},
-			"userXType": "mandatecomboboxstore",
+			"userXType": "mandatecomboboxfilterstore",
 			"cn": [
 				{
 					"id": "MyField34",
@@ -5900,7 +6029,46 @@
 			]
 		},
 		{
-			"id": "MyStore7",
+			"id": "MyStore23",
+			"cid": "jsonstore",
+			"jsClass": "MandateComboBoxStore",
+			"snapToGrid": 10,
+			"userConfig": {
+				"storeId": "MandateComboBoxStore",
+				"root": "results",
+				"autoLoad": "-ext-undefined-",
+				"url": "/ats/main/mandate/list/combobox/",
+				"restful": true,
+				"batch": "-ext-undefined-"
+			},
+			"userXType": "mandatecomboboxstore",
+			"cn": [
+				{
+					"id": "MyField121",
+					"cid": "datafield",
+					"jsClass": "MyField34",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "id",
+						"type": "int",
+						"mapping": "pk"
+					}
+				},
+				{
+					"id": "MyField122",
+					"cid": "datafield",
+					"jsClass": "MyField35",
+					"snapToGrid": 10,
+					"userConfig": {
+						"name": "title",
+						"mapping": "fields[\"title\"]",
+						"type": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": "MyStore20",
 			"cid": "jsonstore",
 			"jsClass": "CandidateMACsStore",
 			"snapToGrid": 10,
@@ -5916,7 +6084,7 @@
 			"userXType": "candidatemacsstore",
 			"cn": [
 				{
-					"id": "MyField38",
+					"id": "MyField114",
 					"cid": "datafield",
 					"jsClass": "MyField38",
 					"snapToGrid": 10,
@@ -5927,7 +6095,7 @@
 					}
 				},
 				{
-					"id": "MyField39",
+					"id": "MyField115",
 					"cid": "datafield",
 					"jsClass": "MyField39",
 					"snapToGrid": 10,
@@ -5938,7 +6106,7 @@
 					}
 				},
 				{
-					"id": "MyField40",
+					"id": "MyField116",
 					"cid": "datafield",
 					"jsClass": "MyField40",
 					"snapToGrid": 10,
@@ -5949,7 +6117,7 @@
 					}
 				},
 				{
-					"id": "MyField41",
+					"id": "MyField117",
 					"cid": "datafield",
 					"jsClass": "MyField41",
 					"snapToGrid": 10,
@@ -5960,7 +6128,7 @@
 					}
 				},
 				{
-					"id": "MyField92",
+					"id": "MyField118",
 					"cid": "datafield",
 					"jsClass": "MyField41",
 					"snapToGrid": 10,
@@ -5971,7 +6139,7 @@
 					}
 				},
 				{
-					"id": "MyField113",
+					"id": "MyField119",
 					"cid": "datafield",
 					"jsClass": "MyField113",
 					"snapToGrid": 10,

@@ -22,8 +22,10 @@ Ext.onReady(function() {
     Ext.StoreMgr.lookup('MACStore').load();
     Ext.StoreMgr.lookup('MandateStatusStore').load();
     Ext.StoreMgr.lookup('MACStatusStore').load();
-    Ext.StoreMgr.lookup('ActivitiesStore').load();
-    Ext.StoreMgr.lookup('HiringManagerStore').load();
+    Ext.StoreMgr.lookup('ActivityStore').load();
+    Ext.StoreMgr.lookup('MACStatusFilterStore').load();
+    Ext.StoreMgr.lookup('MACActivityFilterStore').load();
+     Ext.StoreMgr.lookup('HiringManagerStore').load();
     Ext.StoreMgr.lookup('ManagmentExperienceStore').load();
     Ext.StoreMgr.lookup('ProfessionalDesignationStore').load();
     Ext.StoreMgr.lookup('WorkTypeStore').load();

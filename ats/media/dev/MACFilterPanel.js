@@ -23,13 +23,14 @@ MACFilterPanel = Ext.extend(MACFilterPanelUi, {
             resizable: true,
             name: 'activities',
             anchor:'90%',
-            store: { xtype: 'activitiesstore' },
+            store: { xtype: 'macactivityfilterstore' },
             mode: 'local',
             displayField: 'title',
             displayFieldTpl: '{title}',
             valueField: 'id',
             forceSelection : false,
             stackItems: true,
+            minChars: 0
             //value: '',
             //styleField: 'style',
             //extraItemStyle: 'border-width:2px',
@@ -69,18 +70,19 @@ MACFilterPanel = Ext.extend(MACFilterPanelUi, {
         this.cbstatues = new Ext.ux.form.SuperBoxSelect({
             allowBlank:true,
             xtype:'superboxselect',
-            fieldLabel: 'Statues',
+            fieldLabel: 'Status',
             resizable: true,
             name: 'statues',
             anchor:'90%',
-            store: { xtype: 'macstatusstore' },
+            store: { xtype: 'macstatusfilterstore' },
             mode: 'local',
             displayField: 'title',
             displayFieldTpl: '{title}',
             valueField: 'id',
             //value: '',
             stackItems: true,
-            forceSelection : false
+            forceSelection : false,
+            minChars: 0
         });
 
 
@@ -91,14 +93,16 @@ MACFilterPanel = Ext.extend(MACFilterPanelUi, {
             resizable: true,
             name: 'mandates',
             anchor:'90%',
-            store: { xtype: 'mandatecomboboxstore' },
+            store: { xtype: 'mandatecomboboxfilterstore' },
             mode: 'remote',
             displayField: 'title',
             displayFieldTpl: '{title}',
             valueField: 'id',
             //value: '',
             stackItems: true,
-            forceSelection : false
+            forceSelection : false,
+            minChars: 0,
+            pageSize: 10
         });
 
         this.cbcandidates = new Ext.ux.form.SuperBoxSelect({
@@ -108,14 +112,16 @@ MACFilterPanel = Ext.extend(MACFilterPanelUi, {
             resizable: true,
             name: 'candidates',
             anchor:'90%',
-            store: { xtype: 'candidatecomboboxstore' },
+            store: { xtype: 'candidatecomboboxfilterstore' },
             mode: 'remote',
             displayField: 'ID:{id} {first_name} {last_name}',
             displayFieldTpl: 'ID:{id} {first_name} {last_name}',
             valueField: 'id',
             //value: '',
             stackItems: true,
-            forceSelection : false
+            forceSelection : false,
+            minChars: 0,
+            pageSize: 10
         });
 
 

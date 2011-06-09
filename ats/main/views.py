@@ -153,7 +153,7 @@ def candidate_list_combobox( request ):
 
     data = '{"total": %s, "results": %s}' %\
         ( total, serializers.serialize('json', 
-                                       queryset, 
+                                       queryset[start:start+limit], 
                                        fields = fields) )
     return HttpResponse( data, mimetype = 'application/json' )
 

@@ -1,0 +1,274 @@
+[
+    {
+        "pk": 4, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 1, 
+            "title": "Message"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 2, 
+            "title": "Contact"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 3, 
+            "title": "Interview"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 3, 
+            "title": "Tel Interview"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 4, 
+            "title": "References"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 5, 
+            "title": "Communication"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.activity", 
+        "fields": {
+            "priority": 6, 
+            "title": "Notes"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.macstatus", 
+        "fields": {
+            "priority": 1, 
+            "title": "Future"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.macstatus", 
+        "fields": {
+            "priority": 2, 
+            "title": "Complete"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.macstatus", 
+        "fields": {
+            "priority": 3, 
+            "title": "Cancel"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.managmentexperience", 
+        "fields": {
+            "priority": 1, 
+            "title": "Project"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.managmentexperience", 
+        "fields": {
+            "priority": 2, 
+            "title": "Supervisor"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.managmentexperience", 
+        "fields": {
+            "priority": 3, 
+            "title": "Director"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.managmentexperience", 
+        "fields": {
+            "priority": 3, 
+            "title": "Manager"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.managmentexperience", 
+        "fields": {
+            "priority": 4, 
+            "title": "VP"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.mandatestatus", 
+        "fields": {
+            "priority": 1, 
+            "title": "Open"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.mandatestatus", 
+        "fields": {
+            "priority": 2, 
+            "title": "Fill"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.mandatestatus", 
+        "fields": {
+            "priority": 3, 
+            "title": "Cancel"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.mandatestatus", 
+        "fields": {
+            "priority": 4, 
+            "title": "Draft"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "CA, CPA"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "CFA"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "CGA"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "CIA"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "CMA"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 1, 
+            "title": "FRM, PRM"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 2, 
+            "title": "Financial Planner"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 2, 
+            "title": "Mutual Fund"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 3, 
+            "title": "CSC"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 3, 
+            "title": "Life insurance"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "static.professionaldesignation", 
+        "fields": {
+            "priority": 4, 
+            "title": "Branch Manager"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.worklocation", 
+        "fields": {
+            "priority": 2, 
+            "title": "Montreal - West"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "static.worktype", 
+        "fields": {
+            "priority": 1, 
+            "title": "Full-Time"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "static.worktype", 
+        "fields": {
+            "priority": 2, 
+            "title": "Part-Time"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "static.worktype", 
+        "fields": {
+            "priority": 3, 
+            "title": "Contractual"
+        }
+    }
+]
